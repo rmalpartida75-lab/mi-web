@@ -546,6 +546,1486 @@ footer{background:var(--bg2);border-top:1px solid var(--border);padding:72px 0 3
   /* Hero */
   .hero-in{padding:48px 18px 56px}
   .hero-h1{font-size:clamp(28px,8vw,38px);letter-spacing:-.5px}
+  .hero-visual{display:flex;margin-top:4px}
+  .planet-wrap{max-width:100%}
+  /* Grids → 1 columna */
+  .feat4-grid{grid-template-columns:1fr}
+  .ai-grid{grid-template-columns:1fr}
+  /* Padding secciones reducido */
+  .power{padding:64px 0}
+  .feat4{padding:0 0 64px}
+  .steps{padding:64px 0}
+  .ai-cards{padding:0 0 64px}
+  .ia{padding:64px 0}
+  .faq{padding:64px 0}
+  .ctamid{padding:64px 0}
+  /* Power — arquitectura */
+  .arch-node{font-size:11px;padding:9px 11px;white-space:normal;text-align:center}
+  .arch-connector{gap:24px}
+  /* Feature cards — ocultar panel lateral de app */
+  .app-panel{display:none}
+  .app-phone-wrap{justify-content:center}
+  /* Feature cards — web mockup */
+  .web-mockup{max-width:100%}
+  /* Steps */
+  .step-visual-wrap{max-width:100%}
+  .step-analysis,.step-deploy{font-size:11px}
+  .step-editor-body{font-size:11px}
+  /* AI section */
+  .ia-vis{padding:20px 16px}
+  .ia-stat{padding:14px 16px}
+  /* CTA final */
+  .ctafin{padding:88px 18px}
+  .ctafin-btns{flex-direction:column;align-items:center}
+  .ctafin-in .h2{font-size:clamp(26px,7vw,40px)}
+  /* FAQ */
+  .faq-q{font-size:14px;padding:18px 18px}
+  .faq-body p{padding:0 18px 18px}
+  /* Footer */
+  .foot-top{padding:0}
+  .foot-col{margin-top:4px}
+  .foot-bottom{flex-direction:column;text-align:center;gap:6px}
+  /* Integraciones */
+  .integ-logos{gap:16px}
+  .integ-logo-box{width:56px;height:56px}
+  .integ-pills{gap:7px}
+  .ipill{font-size:12px;padding:6px 12px}
+  /* Logos carousel */
+  .logos-sec{padding:36px 0}
+}
+</style>
+</head>
+<body>
+
+<!-- ═══ S1 NAVBAR ═══════════════════════════════════════════ -->
+<nav id="nav">
+  <div class="nav-in">
+    <a href="#" class="nav-logo">Cor<span>vex</span> Corporación</a>
+    <ul class="nav-links">
+      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="#servicios">Servicios</a></li>
+      <li><a href="#nosotros">Nosotros</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+    <div class="nav-right">
+      <a href="https://wa.link/z3xyjw" target="_blank" rel="noopener" class="btn-main" style="padding:11px 22px;font-size:14px">Contactar</a>
+    </div>
+    <div class="hbg" id="hbg"><span></span><span></span><span></span></div>
+  </div>
+</nav>
+<div class="mob" id="mob">
+  <a href="#inicio" onclick="cm()">Inicio</a>
+  <a href="#servicios" onclick="cm()">Servicios</a>
+  <a href="#nosotros" onclick="cm()">Nosotros</a>
+  <a href="#contacto" onclick="cm()">Contacto</a>
+  <a href="https://wa.link/z3xyjw" target="_blank" rel="noopener" class="btn-main" onclick="cm()">Contactar</a>
+</div>
+
+<!-- ═══ S2 HERO ══════════════════════════════════════════════ -->
+<section class="hero" id="inicio">
+  <div class="hero-grid"></div>
+  <div class="hero-glow"></div>
+  <div class="hero-in">
+
+    <div class="hero-text reveal">
+      <div class="tag-pill">
+        <img src="https://cdn.prod.website-files.com/68f4ee72649c170da7026b71/68f76c3ac576152375f76b9b_Hero%20Teg.svg" alt="">
+        Desarrollo web, apps e inteligencia artificial para empresas
+      </div>
+      <h1 class="hero-h1">Creamos, automatizamos y digitalizamos empresas con <span>tecnología inteligente</span></h1>
+      <p class="hero-p">En Corvex Corporación desarrollamos páginas web, aplicaciones móviles y sistemas automatizados con inteligencia artificial para transformar negocios en ecosistemas digitales eficientes.</p>
+      <a href="https://wa.link/z3xyjw" target="_blank" rel="noopener" class="btn-main">
+        Solicitar asesoría digital
+        <img src="https://cdn.prod.website-files.com/68f4ee72649c170da7026b71/68f7634d777f6053da052008_Button%20Icon%20(1).svg" alt="">
+      </a>
+    </div>
+
+    <!-- PLANETA DIGITAL -->
+    <div class="hero-visual reveal" style="transition-delay:.12s">
+      <div class="planet-wrap">
+        <svg class="planet-svg" viewBox="0 0 560 500" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <!-- Gradiente del planeta: iluminado arriba-izquierda -->
+            <radialGradient id="planetGrad" cx="38%" cy="32%" r="65%" gradientUnits="userSpaceOnUse">
+              <stop offset="0%"   stop-color="#1c3a0a"/>
+              <stop offset="30%"  stop-color="#0d1017"/>
+              <stop offset="100%" stop-color="#03040a"/>
+            </radialGradient>
+            <!-- Halo exterior del planeta -->
+            <radialGradient id="haloGrad" cx="50%" cy="50%" r="50%" gradientUnits="userSpaceOnUse">
+              <stop offset="0%"   stop-color="#a3e635" stop-opacity="0.13"/>
+              <stop offset="50%"  stop-color="#38bdf8"  stop-opacity="0.05"/>
+              <stop offset="100%" stop-color="#000"      stop-opacity="0"/>
+            </radialGradient>
+            <!-- Brillo superior del planeta -->
+            <radialGradient id="shimmerGrad" cx="35%" cy="28%" r="45%">
+              <stop offset="0%"   stop-color="#a3e635" stop-opacity="0.10"/>
+              <stop offset="100%" stop-color="#a3e635" stop-opacity="0"/>
+            </radialGradient>
+            <!-- Clip del planeta -->
+            <clipPath id="planetClip">
+              <circle cx="280" cy="252" r="90"/>
+            </clipPath>
+            <!-- Gradiente línea verde -->
+            <linearGradient id="lnGreen" x1="0" y1="0" x2="1" y2="0">
+              <stop offset="0%"   stop-color="#a3e635" stop-opacity="0.0"/>
+              <stop offset="50%"  stop-color="#a3e635" stop-opacity="0.55"/>
+              <stop offset="100%" stop-color="#a3e635" stop-opacity="0.15"/>
+            </linearGradient>
+            <linearGradient id="lnBlue" x1="0" y1="0" x2="1" y2="0">
+              <stop offset="0%"   stop-color="#38bdf8" stop-opacity="0.0"/>
+              <stop offset="50%"  stop-color="#38bdf8" stop-opacity="0.5"/>
+              <stop offset="100%" stop-color="#38bdf8" stop-opacity="0.15"/>
+            </linearGradient>
+            <linearGradient id="lnPurple" x1="0" y1="0" x2="1" y2="0">
+              <stop offset="0%"   stop-color="#a78bfa" stop-opacity="0.0"/>
+              <stop offset="50%"  stop-color="#a78bfa" stop-opacity="0.5"/>
+              <stop offset="100%" stop-color="#a78bfa" stop-opacity="0.15"/>
+            </linearGradient>
+          </defs>
+
+          <!-- ── Estrellas de fondo ── -->
+          <circle cx="40"  cy="30"  r="1"   fill="#fff" opacity="0.25"/>
+          <circle cx="510" cy="55"  r="1.2" fill="#fff" opacity="0.2"/>
+          <circle cx="90"  cy="420" r="0.9" fill="#fff" opacity="0.2"/>
+          <circle cx="490" cy="440" r="1"   fill="#fff" opacity="0.18"/>
+          <circle cx="20"  cy="250" r="0.8" fill="#fff" opacity="0.15"/>
+          <circle cx="530" cy="300" r="1.1" fill="#fff" opacity="0.2"/>
+          <circle cx="150" cy="70"  r="0.7" fill="#fff" opacity="0.18"/>
+          <circle cx="420" cy="80"  r="1"   fill="#fff" opacity="0.2"/>
+          <circle cx="60"  cy="340" r="0.8" fill="#fff" opacity="0.15"/>
+          <circle cx="500" cy="180" r="0.7" fill="#fff" opacity="0.15"/>
+
+          <!-- ── Halo / resplandor del planeta ── -->
+          <circle cx="280" cy="252" r="185" fill="url(#haloGrad)"/>
+
+          <!-- ── Anillos de órbita ── -->
+          <ellipse cx="280" cy="252" rx="200" ry="62"
+                   stroke="#a3e635" stroke-opacity="0.07" stroke-width="1" fill="none"/>
+          <ellipse cx="280" cy="252" rx="168" ry="52"
+                   stroke="#38bdf8" stroke-opacity="0.06" stroke-width="1" fill="none"
+                   transform="rotate(18,280,252)"/>
+
+          <!-- ── Satélites orbitando ── -->
+          <!-- Satélite 1 (verde) -->
+          <circle cx="280" cy="252" r="4.5" fill="#a3e635" fill-opacity="0.85">
+            <animateTransform attributeName="transform" type="rotate"
+              from="0 280 252" to="360 280 252" dur="14s" repeatCount="indefinite"/>
+            <animateMotion dur="14s" repeatCount="indefinite">
+              <mpath href="#orbit1path"/>
+            </animateMotion>
+          </circle>
+          <!-- Satélite 2 (azul, desfasado) -->
+          <circle cx="280" cy="252" r="3.5" fill="#38bdf8" fill-opacity="0.75">
+            <animateMotion dur="14s" begin="-7s" repeatCount="indefinite">
+              <mpath href="#orbit1path"/>
+            </animateMotion>
+          </circle>
+          <!-- Satélite 3 (lila, órbita inclinada) -->
+          <circle cx="280" cy="252" r="3" fill="#a78bfa" fill-opacity="0.7">
+            <animateMotion dur="18s" begin="-5s" repeatCount="indefinite">
+              <mpath href="#orbit2path"/>
+            </animateMotion>
+          </circle>
+          <!-- Paths ocultos para animateMotion -->
+          <path id="orbit1path" d="M480,252 a200,62 0 1,1 -0.01,0" fill="none"/>
+          <path id="orbit2path" d="M448,252 a168,52 0 1,1 -0.01,0" fill="none"
+                transform="rotate(18,280,252)"/>
+
+          <!-- ── Cuerpo del planeta ── -->
+          <circle cx="280" cy="252" r="90" fill="url(#planetGrad)"/>
+
+          <!-- ── Grilla del planeta (rotación continua, clipeada) ── -->
+          <g clip-path="url(#planetClip)">
+            <g class="pgrid">
+              <!-- Meridianos (elipses verticales) -->
+              <ellipse cx="280" cy="252" rx="90"  ry="90" fill="none" stroke="#a3e635" stroke-opacity="0.18" stroke-width="0.8"/>
+              <ellipse cx="280" cy="252" rx="60"  ry="90" fill="none" stroke="#a3e635" stroke-opacity="0.13" stroke-width="0.7"/>
+              <ellipse cx="280" cy="252" rx="30"  ry="90" fill="none" stroke="#a3e635" stroke-opacity="0.09" stroke-width="0.6"/>
+              <!-- Paralelos (elipses horizontales) -->
+              <ellipse cx="280" cy="215" rx="80"  ry="24" fill="none" stroke="#a3e635" stroke-opacity="0.09" stroke-width="0.6"/>
+              <ellipse cx="280" cy="252" rx="90"  ry="27" fill="none" stroke="#a3e635" stroke-opacity="0.13" stroke-width="0.7"/>
+              <ellipse cx="280" cy="289" rx="80"  ry="24" fill="none" stroke="#a3e635" stroke-opacity="0.09" stroke-width="0.6"/>
+            </g>
+          </g>
+
+          <!-- ── Borde y brillo del planeta ── -->
+          <circle cx="280" cy="252" r="90" fill="none"
+                  stroke="#a3e635" stroke-opacity="0.32" stroke-width="1.5"/>
+          <circle cx="280" cy="252" r="90" fill="url(#shimmerGrad)"/>
+
+          <!-- ── Núcleo central pulsante ── -->
+          <circle cx="280" cy="252" r="5" fill="#a3e635" opacity="0.9"/>
+          <circle cx="280" cy="252" r="5" fill="none" stroke="#a3e635" stroke-opacity="0.6" stroke-width="1">
+            <animate attributeName="r"              values="8;18;8"    dur="2.8s" repeatCount="indefinite"/>
+            <animate attributeName="stroke-opacity" values="0.6;0;0.6" dur="2.8s" repeatCount="indefinite"/>
+          </circle>
+
+          <!-- ══════════════════════════════════════════
+               TAGS DE SERVICIO + LÍNEAS CONECTORAS
+               Cada tag: rect redondeado + barra izq + texto
+               Cada línea: degradado + punto de anclaje + pulso
+          ══════════════════════════════════════════ -->
+
+          <!-- ── TAG 1: Páginas Web (arriba derecha) ── -->
+          <line x1="345" y1="186" x2="400" y2="108"
+                stroke="url(#lnGreen)" stroke-width="1.2" stroke-dasharray="5 3"/>
+          <circle cx="345" cy="186" r="3.5" fill="#a3e635" opacity="0.85"/>
+          <g class="ptag-1">
+            <rect x="395" y="80" width="148" height="36" rx="8"
+                  fill="#0c0e14" stroke="#a3e635" stroke-opacity="0.38" stroke-width="1"/>
+            <rect x="395" y="80" width="4"   height="36" rx="2" fill="#a3e635" opacity="0.75"/>
+            <text x="414" y="103" font-family="Inter,sans-serif" font-size="12.5"
+                  font-weight="600" fill="#a3e635">🌐 Páginas Web</text>
+          </g>
+          <!-- pulso viajando por la línea -->
+          <circle r="3" fill="#a3e635" opacity="0.9">
+            <animateMotion dur="2.6s" repeatCount="indefinite" begin="0s">
+              <mpath href="#lp1"/>
+            </animateMotion>
+          </circle>
+          <path id="lp1" d="M345,186 L400,108" fill="none"/>
+
+          <!-- ── TAG 2: Apps Móviles (derecha) ── -->
+          <line x1="370" y1="252" x2="432" y2="246"
+                stroke="url(#lnBlue)" stroke-width="1.2" stroke-dasharray="5 3"/>
+          <circle cx="370" cy="252" r="3.5" fill="#38bdf8" opacity="0.85"/>
+          <g class="ptag-2">
+            <rect x="428" y="229" width="140" height="36" rx="8"
+                  fill="#0c0e14" stroke="#38bdf8" stroke-opacity="0.38" stroke-width="1"/>
+            <rect x="428" y="229" width="4"   height="36" rx="2" fill="#38bdf8" opacity="0.75"/>
+            <text x="447" y="252" font-family="Inter,sans-serif" font-size="12.5"
+                  font-weight="600" fill="#38bdf8">📱 Apps Móviles</text>
+          </g>
+          <circle r="3" fill="#38bdf8" opacity="0.9">
+            <animateMotion dur="2.9s" repeatCount="indefinite" begin="0.5s">
+              <mpath href="#lp2"/>
+            </animateMotion>
+          </circle>
+          <path id="lp2" d="M370,252 L432,246" fill="none"/>
+
+          <!-- ── TAG 3: Inteligencia Artificial (abajo derecha) ── -->
+          <line x1="335" y1="316" x2="388" y2="385"
+                stroke="url(#lnPurple)" stroke-width="1.2" stroke-dasharray="5 3"/>
+          <circle cx="335" cy="316" r="3.5" fill="#a78bfa" opacity="0.85"/>
+          <g class="ptag-3">
+            <rect x="352" y="372" width="186" height="36" rx="8"
+                  fill="#0c0e14" stroke="#a78bfa" stroke-opacity="0.38" stroke-width="1"/>
+            <rect x="352" y="372" width="4"   height="36" rx="2" fill="#a78bfa" opacity="0.75"/>
+            <text x="371" y="395" font-family="Inter,sans-serif" font-size="12.5"
+                  font-weight="600" fill="#a78bfa">🤖 Inteligencia Artificial</text>
+          </g>
+          <circle r="3" fill="#a78bfa" opacity="0.9">
+            <animateMotion dur="3.2s" repeatCount="indefinite" begin="1s">
+              <mpath href="#lp3"/>
+            </animateMotion>
+          </circle>
+          <path id="lp3" d="M335,316 L388,385" fill="none"/>
+
+          <!-- ── TAG 4: Automatización (izquierda) ── -->
+          <line x1="190" y1="252" x2="130" y2="247"
+                stroke="url(#lnGreen)" stroke-width="1.2" stroke-dasharray="5 3"
+                transform="scale(-1,1) translate(-560,0)"/>
+          <!-- línea directa sin transform para que el degradado vaya bien -->
+          <line x1="190" y1="252" x2="128" y2="247"
+                stroke="#a3e635" stroke-opacity="0.3" stroke-width="1.2" stroke-dasharray="5 3"/>
+          <circle cx="190" cy="252" r="3.5" fill="#a3e635" opacity="0.8"/>
+          <g class="ptag-4">
+            <rect x="0" y="229" width="132" height="36" rx="8"
+                  fill="#0c0e14" stroke="#a3e635" stroke-opacity="0.35" stroke-width="1"/>
+            <rect x="128" y="229" width="4"  height="36" rx="2" fill="#a3e635" opacity="0.7"/>
+            <text x="16" y="252" font-family="Inter,sans-serif" font-size="12.5"
+                  font-weight="600" fill="#a3e635">⚙️ Automatización</text>
+          </g>
+          <circle r="3" fill="#a3e635" opacity="0.9">
+            <animateMotion dur="2.7s" repeatCount="indefinite" begin="0.8s">
+              <mpath href="#lp4"/>
+            </animateMotion>
+          </circle>
+          <path id="lp4" d="M190,252 L128,247" fill="none"/>
+
+          <!-- ── TAG 5: Sistemas Integrados (arriba izquierda) ── -->
+          <line x1="224" y1="185" x2="163" y2="108"
+                stroke="#38bdf8" stroke-opacity="0.28" stroke-width="1.2" stroke-dasharray="5 3"/>
+          <circle cx="224" cy="185" r="3.5" fill="#38bdf8" opacity="0.8"/>
+          <g class="ptag-5">
+            <rect x="0" y="80" width="166" height="36" rx="8"
+                  fill="#0c0e14" stroke="#38bdf8" stroke-opacity="0.35" stroke-width="1"/>
+            <rect x="0" y="80" width="4"   height="36" rx="2" fill="#38bdf8" opacity="0.7"/>
+            <text x="18" y="103" font-family="Inter,sans-serif" font-size="12.5"
+                  font-weight="600" fill="#38bdf8">🔗 Sistemas Integrados</text>
+          </g>
+          <circle r="3" fill="#38bdf8" opacity="0.9">
+            <animateMotion dur="3s" repeatCount="indefinite" begin="1.4s">
+              <mpath href="#lp5"/>
+            </animateMotion>
+          </circle>
+          <path id="lp5" d="M224,185 L163,108" fill="none"/>
+
+        </svg>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ═══ S3 LOGOS CAROUSEL ════════════════════════════════════ -->
+<section class="logos-sec">
+  <p class="logos-txt">Empresas que crecen con soluciones digitales integrales</p>
+  <div class="car-wrap">
+    <div class="car-track">
+      <img class="car-logo" src="https://cdn.prod.website-files.com/68f4ee72649c170da7026b71/68f78a2984610f41f17637bd_Brand%20Logo%20(1).svg" alt="">
+      <img class="car-logo" src="https://cdn.prod.website-files.com/68f4ee72649c170da7026b71/68f78a294d7352546ad08fe0_Brand%20Logo%20(7).svg" alt="">
+      <img class="car-logo" src="https://cdn.prod.website-files.com/68f4ee72649c170da7026b71/68f78a2965c168422eb885be_Brand%20Logo%20(4).svg" alt="">
+      <img class="car-logo" src="https://cdn.prod.website-files.com/68f4ee72649c170da7026b71/68f78a29302827baade07df3_Brand%20Logo%20(5).svg" alt="">
+      <img class="car-logo" src="https://cdn.prod.website-files.com/68f4ee72649c170da7026b71/68f78a2993d8a83e6520c369_Brand%20Logo%20(6).svg" alt="">
+      <img class="car-logo" src="https://cdn.prod.website-files.com/68f4ee72649c170da7026b71/68f78a29199e4ac28e4db0c0_Brand%20Logo%20(2).svg" alt="">
+      <img class="car-logo" src="https://cdn.prod.website-files.com/68f4ee72649c170da7026b71/68f78a2984610f41f17637bd_Brand%20Logo%20(1).svg" alt="">
+      <img class="car-logo" src="https://cdn.prod.website-files.com/68f4ee72649c170da7026b71/68f78a294d7352546ad08fe0_Brand%20Logo%20(7).svg" alt="">
+      <img class="car-logo" src="https://cdn.prod.website-files.com/68f4ee72649c170da7026b71/68f78a2965c168422eb885be_Brand%20Logo%20(4).svg" alt="">
+      <img class="car-logo" src="https://cdn.prod.website-files.com/68f4ee72649c170da7026b71/68f78a29302827baade07df3_Brand%20Logo%20(5).svg" alt="">
+      <img class="car-logo" src="https://cdn.prod.website-files.com/68f4ee72649c170da7026b71/68f78a2993d8a83e6520c369_Brand%20Logo%20(6).svg" alt="">
+      <img class="car-logo" src="https://cdn.prod.website-files.com/68f4ee72649c170da7026b71/68f78a29199e4ac28e4db0c0_Brand%20Logo%20(2).svg" alt="">
+    </div>
+  </div>
+</section>
+
+<!-- ═══ S4 ARQUITECTURA CSS ══════════════════════════════════ -->
+<section class="power" id="servicios">
+  <div class="wrap">
+    <div class="power-in">
+      <div class="power-text reveal">
+        <div class="tag-pill" style="margin-bottom:20px">Ecosistema digital</div>
+        <h2 class="h2" style="margin-bottom:18px">Un solo ecosistema digital para tu empresa</h2>
+        <p class="sub">Integramos web, aplicaciones móviles, inteligencia artificial y automatización en una arquitectura digital coherente y escalable. Tu empresa opera como un sistema unificado, eficiente y conectado.</p>
+      </div>
+      <!-- Diagrama arquitectura CSS -->
+      <div class="reveal" style="transition-delay:.14s">
+        <div class="arch-diagram css-window">
+          <div class="css-window-bar">
+            <span class="css-dot r"></span><span class="css-dot y"></span><span class="css-dot g"></span>
+            <span class="css-wintitle">Arquitectura Corvex</span>
+          </div>
+          <div style="padding:28px;display:flex;flex-direction:column;gap:0;align-items:center">
+            <!-- Capa cliente -->
+            <div class="arch-row">
+              <div class="arch-node"><span class="n-icon">🌐</span>Sitio Web</div>
+              <div class="arch-node"><span class="n-icon">📱</span>App Móvil</div>
+            </div>
+            <div class="arch-connector"><div class="arch-line-v"></div></div>
+            <!-- Core -->
+            <div class="arch-row">
+              <div class="arch-node core"><span class="n-icon">⚡</span>Corvex Core Platform</div>
+            </div>
+            <div class="arch-connector" style="gap:80px">
+              <div class="arch-line-v"></div>
+              <div class="arch-line-v"></div>
+            </div>
+            <!-- Servicios -->
+            <div class="arch-row">
+              <div class="arch-node"><span class="n-icon">🤖</span>Motor IA</div>
+              <div class="arch-node"><span class="n-icon">⚙️</span>Automatización</div>
+            </div>
+            <div class="arch-connector"><div class="arch-line-v"></div></div>
+            <!-- Base -->
+            <div class="arch-row">
+              <div class="arch-node"><span class="n-icon">🗄️</span>Base de Datos</div>
+              <div class="arch-node"><span class="n-icon">🔗</span>APIs</div>
+              <div class="arch-node"><span class="n-icon">📊</span>CRM / ERP</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ S5 FEATURE CARDS CSS ═════════════════════════════════ -->
+<section class="feat4">
+  <div class="wrap">
+    <div class="feat4-hd reveal">
+      <div class="tag-pill" style="margin-bottom:14px">Nuestros servicios</div>
+      <h2 class="h2">Lo que construimos para ti</h2>
+    </div>
+    <div class="feat4-grid">
+
+      <!-- Card 1 — Web -->
+      <div class="fc reveal">
+        <div class="fc-graphic">
+          <div class="web-mockup">
+            <div class="wm-chrome">
+              <span class="css-dot r"></span><span class="css-dot y"></span><span class="css-dot g"></span>
+              <div class="wm-url">corvex.digital/mi-empresa</div>
+            </div>
+            <div class="wm-body">
+              <div class="wm-nav">
+                <div class="wm-nav-logo"></div>
+                <div class="wm-nav-links"><div class="wm-nav-link"></div><div class="wm-nav-link"></div><div class="wm-nav-link"></div></div>
+                <div class="wm-nav-btn"></div>
+              </div>
+              <div class="wm-hero">
+                <div class="wm-hero-text">
+                  <div class="wm-h-title"></div>
+                  <div class="wm-h-title sm"></div>
+                  <div class="wm-h-sub"></div>
+                  <div class="wm-h-sub sm"></div>
+                  <div class="wm-h-cta"></div>
+                </div>
+                <div class="wm-hero-img">
+                  <div class="wm-bars-mini">
+                    <div class="wm-bar-mini" style="height:20px"></div>
+                    <div class="wm-bar-mini" style="height:30px"></div>
+                    <div class="wm-bar-mini" style="height:18px"></div>
+                    <div class="wm-bar-mini" style="height:34px"></div>
+                    <div class="wm-bar-mini" style="height:24px"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="wm-feat-row">
+                <div class="wm-feat"><div class="wm-feat-icon"></div><div class="wm-feat-line"></div><div class="wm-feat-line sh"></div></div>
+                <div class="wm-feat"><div class="wm-feat-icon" style="background:rgba(56,189,248,.25)"></div><div class="wm-feat-line"></div><div class="wm-feat-line sh"></div></div>
+                <div class="wm-feat"><div class="wm-feat-icon" style="background:rgba(167,139,250,.25)"></div><div class="wm-feat-line"></div><div class="wm-feat-line sh"></div></div>
+              </div>
+              <div class="wm-metrics">
+                <div class="wm-metric"><div class="wm-metric-val">SEO</div><div class="wm-metric-lbl">Optimizado</div></div>
+                <div class="wm-metric"><div class="wm-metric-val">0.8s</div><div class="wm-metric-lbl">Carga</div></div>
+                <div class="wm-metric"><div class="wm-metric-val">100</div><div class="wm-metric-lbl">Lighthouse</div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="fc-body">
+          <h3>Desarrollo de Páginas Web</h3>
+          <p>Sitios web modernos, rápidos y optimizados para tu negocio. Diseñados para convertir visitantes en clientes con rendimiento y presencia profesional.</p>
+        </div>
+      </div>
+
+      <!-- Card 2 — Apps -->
+      <div class="fc reveal" style="transition-delay:.1s">
+        <div class="fc-graphic">
+          <div class="app-phone-wrap">
+            <div class="app-phone">
+              <div class="app-phone-inner">
+                <div class="app-status">
+                  <span class="app-status-time">9:41</span>
+                  <div class="app-status-icons"><div class="app-status-bar"></div></div>
+                </div>
+                <div class="app-header-bar">
+                  <span class="app-header-title">Mi Empresa</span>
+                  <span class="app-header-badge">+18%</span>
+                </div>
+                <div class="app-kpi-row">
+                  <div class="app-kpi"><span class="app-kpi-val">1.2k</span><div class="app-kpi-lbl">Pedidos</div></div>
+                  <div class="app-kpi"><span class="app-kpi-val b">97%</span><div class="app-kpi-lbl">Entregado</div></div>
+                </div>
+                <div class="app-chart-area">
+                  <div class="app-chart-title">Ventas — 7 días</div>
+                  <div class="app-bars">
+                    <div class="app-bar" style="height:40%"></div>
+                    <div class="app-bar" style="height:58%"></div>
+                    <div class="app-bar" style="height:44%"></div>
+                    <div class="app-bar hi" style="height:82%"></div>
+                    <div class="app-bar" style="height:66%"></div>
+                    <div class="app-bar hi" style="height:92%"></div>
+                    <div class="app-bar" style="height:72%"></div>
+                  </div>
+                </div>
+                <div>
+                  <div class="app-list-row"><div class="app-list-dot"></div><div class="app-list-lines"><div class="app-list-line"></div><div class="app-list-line sm"></div></div><div class="app-list-val">+24%</div></div>
+                  <div class="app-list-row"><div class="app-list-dot b"></div><div class="app-list-lines"><div class="app-list-line"></div><div class="app-list-line sm"></div></div><div class="app-list-val" style="color:var(--blue)">OK</div></div>
+                </div>
+                <div class="app-nav">
+                  <div class="app-nav-item"><div class="app-nav-icon act"></div><div class="app-nav-dot act"></div></div>
+                  <div class="app-nav-item"><div class="app-nav-icon"></div><div class="app-nav-dot"></div></div>
+                  <div class="app-nav-item"><div class="app-nav-icon"></div><div class="app-nav-dot"></div></div>
+                  <div class="app-nav-item"><div class="app-nav-icon"></div><div class="app-nav-dot"></div></div>
+                </div>
+              </div>
+            </div>
+            <div class="app-panel">
+              <div class="app-panel-header">
+                <div class="app-panel-dot"></div>
+                <span class="app-panel-title">Panel Admin</span>
+              </div>
+              <div class="app-panel-body">
+                <div class="app-panel-row"><div class="app-panel-icon">📦</div><div class="app-panel-info"><div class="app-panel-name">Inventario</div><div class="app-panel-sub">Actualizado</div></div><div class="app-panel-val">247</div></div>
+                <div class="app-panel-row"><div class="app-panel-icon">👤</div><div class="app-panel-info"><div class="app-panel-name">Clientes</div><div class="app-panel-sub">Nuevos hoy</div></div><div class="app-panel-val">+12</div></div>
+                <div class="app-panel-row"><div class="app-panel-icon">🔔</div><div class="app-panel-info"><div class="app-panel-name">Alertas</div><div class="app-panel-sub">Push activas</div></div><div class="app-panel-val" style="color:var(--blue)">On</div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="fc-body">
+          <h3>Aplicaciones Móviles y Sistemas</h3>
+          <p>Apps personalizadas para gestión, clientes y operaciones internas. Soluciones nativas y multiplataforma adaptadas a tu flujo de trabajo.</p>
+        </div>
+      </div>
+
+      <!-- Card 3 — Automatización -->
+      <div class="fc reveal" style="transition-delay:.2s">
+        <div class="fc-graphic">
+          <div class="pipe-wrap">
+            <div class="pipe-step trig">
+              <div class="pipe-icon-box trig">⚡</div>
+              <div class="pipe-info">
+                <div class="pipe-info-title">Disparador</div>
+                <div class="pipe-info-sub">Nuevo lead en CRM</div>
+              </div>
+              <span class="pipe-badge trig">Activo</span>
+            </div>
+            <div class="pipe-connector"><div class="pipe-conn-dot"></div></div>
+            <div class="pipe-step proc">
+              <div class="pipe-icon-box proc">🔄</div>
+              <div class="pipe-info">
+                <div class="pipe-info-title">Procesamiento IA</div>
+                <div class="pipe-info-sub">Clasifica y decide</div>
+              </div>
+              <span class="pipe-badge proc">IA</span>
+            </div>
+            <div class="pipe-connector"><div class="pipe-conn-dot" style="animation-delay:.6s"></div></div>
+            <div class="pipe-step actn">
+              <div class="pipe-icon-box actn">✅</div>
+              <div class="pipe-info">
+                <div class="pipe-info-title">Acción Automática</div>
+                <div class="pipe-info-sub">Email + tarea asignada</div>
+              </div>
+              <span class="pipe-badge actn">Auto</span>
+            </div>
+            <div class="pipe-counter-strip">
+              <div class="pipe-counter"><span class="pipe-counter-num">2.4k</span><div class="pipe-counter-lbl">Tareas/día</div></div>
+              <div class="pipe-counter"><span class="pipe-counter-num">0</span><div class="pipe-counter-lbl">Errores</div></div>
+              <div class="pipe-counter"><span class="pipe-counter-num">98%</span><div class="pipe-counter-lbl">Eficiencia</div></div>
+            </div>
+          </div>
+        </div>
+        <div class="fc-body">
+          <h3>Automatización de Procesos</h3>
+          <p>Elimina tareas manuales y optimiza tu empresa con flujos inteligentes. Reduce errores, ahorra tiempo y escala sin aumentar el equipo.</p>
+        </div>
+      </div>
+
+      <!-- Card 4 — IA -->
+      <div class="fc reveal" style="transition-delay:.3s">
+        <div class="fc-graphic">
+          <div class="ai-chat-wrap">
+            <div class="ai-chat-topbar">
+              <div class="ai-chat-av">🤖</div>
+              <span class="ai-chat-name">Corvex IA</span>
+              <span class="ai-chat-online"><span class="ai-chat-online-dot"></span>Activa</span>
+            </div>
+            <div class="ai-chat-body">
+              <div class="ai-bubble user">¿Cómo mejorar la conversión del Q4?</div>
+              <div class="ai-bubble bot">
+                Analicé 1,240 registros. Detecté 3 oportunidades:
+                <div class="ai-insight-list">
+                  <div class="ai-insight-item">Automatizar seguimiento a leads</div>
+                  <div class="ai-insight-item">Segmentar clientes con IA</div>
+                  <div class="ai-insight-item">Optimizar funnel de conversión</div>
+                </div>
+              </div>
+              <div class="ai-typing-row">
+                <div class="ai-typing-dots">
+                  <div class="ai-typing-dot"></div><div class="ai-typing-dot"></div><div class="ai-typing-dot"></div>
+                </div>
+                <span class="ai-typing-label">Generando reporte…</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="fc-body">
+          <h3>Inteligencia Artificial Empresarial</h3>
+          <p>IA aplicada para análisis, atención al cliente y toma de decisiones. Modelos entrenados para tu industria que generan ventaja competitiva real.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══ S6 INTEGRACIONES ══════════════════════════════════════ -->
+<section class="integ">
+  <div class="wrap">
+    <div class="integ-hd reveal">
+      <div class="tag-pill" style="margin-bottom:14px">Conectividad</div>
+      <h2 class="h2">Conectamos tu empresa con el mundo digital</h2>
+    </div>
+    <div class="integ-logos reveal" style="transition-delay:.1s">
+      <div class="integ-logo-wrap"><div class="integ-logo-box"><img src="https://cdn.prod.website-files.com/68f4ee72649c170da7026b71/68fb0cdeb80ffe0d8f605c95_Logo%20Icon%20(1).svg" alt=""></div><span class="integ-label">APIs REST</span></div>
+      <div class="integ-logo-wrap"><div class="integ-logo-box"><img src="https://cdn.prod.website-files.com/68f4ee72649c170da7026b71/68fb0cdfcad5ae53bf809077_Logo%20Icon%20(2).svg" alt=""></div><span class="integ-label">Apps Móviles</span></div>
+      <div class="integ-logo-wrap"><div class="integ-logo-box"><img src="https://cdn.prod.website-files.com/68f4ee72649c170da7026b71/68fb0cdf76ba4f653d1a188f_Logo%20Icon%20(3).svg" alt=""></div><span class="integ-label">Plataformas Web</span></div>
+      <div class="integ-logo-wrap"><div class="integ-logo-box"><img src="https://cdn.prod.website-files.com/68f4ee72649c170da7026b71/68fb0cde124ce541e1a30135_Logo%20Icon%20(4).svg" alt=""></div><span class="integ-label">IA & ML</span></div>
+      <div class="integ-logo-wrap"><div class="integ-logo-box"><img src="https://cdn.prod.website-files.com/68f4ee72649c170da7026b71/68fb0cde1a23ce7731391b36_Logo%20Icon%20(5).svg" alt=""></div><span class="integ-label">CRM / ERP</span></div>
+    </div>
+    <div class="integ-pills reveal" style="transition-delay:.2s">
+      <span class="ipill">Pasarelas de Pago</span>
+      <span class="ipill">Cloud Services</span>
+      <span class="ipill">Bases de Datos</span>
+      <span class="ipill">Notificaciones Push</span>
+      <span class="ipill">Sistemas Empresariales</span>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ S7 PASOS CON GRAFICOS CSS ════════════════════════════ -->
+<section class="steps">
+  <div class="steps-glow"></div>
+  <div class="wrap">
+    <div class="steps-hd reveal">
+      <div class="tag-pill" style="margin-bottom:14px">Nuestro proceso</div>
+      <h2 class="h2">De la idea al sistema digital</h2>
+      <p class="sub" style="max-width:480px;margin:14px auto 0">Proceso estructurado para garantizar que cada solución sea precisa, escalable y alineada con tus objetivos.</p>
+    </div>
+    <div class="steps-list">
+
+      <!-- Paso 01 — Analisis -->
+      <div class="step-row reveal">
+        <div class="step-txt">
+          <span class="step-num">Paso 01</span>
+          <h2 class="h2" style="font-size:clamp(22px,2.8vw,36px)">Análisis y estrategia digital</h2>
+          <p class="sub">Analizamos tu negocio y definimos la solución digital ideal. Identificamos oportunidades, cuellos de botella y el mapa tecnológico más eficiente para tu empresa.</p>
+        </div>
+        <div class="step-visual-wrap reveal" style="transition-delay:.12s">
+          <div class="step-analysis">
+            <div class="step-analysis-header">
+              <span class="step-analysis-title">Diagnóstico Digital — Corvex</span>
+              <span class="step-analysis-badge">Análisis Completo</span>
+            </div>
+            <div class="analysis-grid">
+              <div class="analysis-box"><span class="analysis-box-num" id="an1">0</span><div class="analysis-box-lbl">Áreas analizadas</div></div>
+              <div class="analysis-box"><span class="analysis-box-num" id="an2">0</span><div class="analysis-box-lbl">Oportunidades</div></div>
+              <div class="analysis-box"><span class="analysis-box-num" id="an3">0</span><div class="analysis-box-lbl">Procesos mapeados</div></div>
+              <div class="analysis-box"><span class="analysis-box-num" id="an4">0%</span><div class="analysis-box-lbl">Eficiencia posible</div></div>
+            </div>
+            <div class="analysis-items">
+              <div class="analysis-item"><div class="analysis-item-dot"></div>Estructura tecnológica actual</div>
+              <div class="analysis-item"><div class="analysis-item-dot"></div>Flujos de trabajo internos</div>
+              <div class="analysis-item"><div class="analysis-item-dot"></div>Oportunidades de automatización</div>
+            </div>
+            <div class="analysis-progress" id="analysisProgress">
+              <div class="ap-row"><span class="ap-label">Web Strategy</span><div class="ap-track"><div class="ap-fill" data-w="90"></div></div><span class="ap-val">90%</span></div>
+              <div class="ap-row"><span class="ap-label">Tech Audit</span><div class="ap-track"><div class="ap-fill" data-w="75"></div></div><span class="ap-val">75%</span></div>
+              <div class="ap-row"><span class="ap-label">AI Readiness</span><div class="ap-track"><div class="ap-fill" data-w="82"></div></div><span class="ap-val">82%</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Paso 02 — Desarrollo -->
+      <div class="step-row rev reveal" style="transition-delay:.1s">
+        <div class="step-txt">
+          <span class="step-num">Paso 02</span>
+          <h2 class="h2" style="font-size:clamp(22px,2.8vw,36px)">Diseño y desarrollo con IA</h2>
+          <p class="sub">Diseñamos y desarrollamos web, apps y automatización con IA. Cada componente es construido con calidad, velocidad y escalabilidad como prioridades.</p>
+        </div>
+        <div class="step-visual-wrap reveal" style="transition-delay:.12s">
+          <div class="css-window step-editor">
+            <div class="css-window-bar">
+              <span class="css-dot r"></span><span class="css-dot y"></span><span class="css-dot g"></span>
+              <span class="css-wintitle">corvex-platform / src / ai-engine.ts</span>
+            </div>
+            <div class="step-editor-body">
+              <div class="code-line"><span class="ln">1</span><span class="cm">// Corvex IA Engine — Sistema Central</span></div>
+              <div class="code-line"><span class="ln">2</span></div>
+              <div class="code-line"><span class="ln">3</span><span class="kw">import</span><span class="op"> { </span><span class="fn">AIModel</span><span class="op">, </span><span class="fn">DataPipeline</span><span class="op"> } </span><span class="kw">from</span><span class="str"> '@corvex/core'</span></div>
+              <div class="code-line"><span class="ln">4</span><span class="kw">import</span><span class="op"> { </span><span class="fn">AutomationFlow</span><span class="op"> } </span><span class="kw">from</span><span class="str"> '@corvex/automation'</span></div>
+              <div class="code-line"><span class="ln">5</span></div>
+              <div class="code-line"><span class="ln">6</span><span class="kw">export class</span><span class="fn"> CorvexAI </span><span class="op">{</span></div>
+              <div class="code-line"><span class="ln">7</span>&nbsp;&nbsp;<span class="kw">private</span><span class="fn"> model</span><span class="op">: </span><span class="fn">AIModel</span></div>
+              <div class="code-line"><span class="ln">8</span>&nbsp;&nbsp;<span class="kw">private</span><span class="fn"> pipeline</span><span class="op">: </span><span class="fn">DataPipeline</span></div>
+              <div class="code-line"><span class="ln">9</span></div>
+              <div class="code-line"><span class="ln">10</span>&nbsp;&nbsp;<span class="kw">async</span><span class="fn"> analyze</span><span class="op">(</span><span class="fn">business</span><span class="op">: </span><span class="fn">BusinessData</span><span class="op">) {</span></div>
+              <div class="code-line"><span class="ln">11</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="kw">const</span><span class="fn"> insights</span><span class="op"> = </span><span class="kw">await</span><span class="fn"> this.model</span><span class="op">.</span><span class="fn">process</span><span class="op">(</span><span class="fn">business</span><span class="op">)</span></div>
+              <div class="code-line"><span class="ln">12</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="kw">return</span><span class="fn"> insights</span><span class="op">.</span><span class="fn">optimize</span><span class="op">()</span><span class="cursor-blink"></span></div>
+              <div class="code-line"><span class="ln">13</span>&nbsp;&nbsp;<span class="op">}</span></div>
+              <div class="code-line"><span class="ln">14</span><span class="op">}</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Paso 03 — Implementacion -->
+      <div class="step-row reveal" style="transition-delay:.2s">
+        <div class="step-txt">
+          <span class="step-num">Paso 03</span>
+          <h2 class="h2" style="font-size:clamp(22px,2.8vw,36px)">Implementación y escala</h2>
+          <p class="sub">Implementamos y escalamos tu sistema digital empresarial. Acompañamos el lanzamiento, la adopción del equipo y el crecimiento continuo de tu plataforma.</p>
+        </div>
+        <div class="step-visual-wrap reveal" style="transition-delay:.12s">
+          <div class="step-deploy">
+            <div class="deploy-header">
+              <span class="deploy-title">Corvex Deploy Pipeline</span>
+              <span class="deploy-status"><span class="deploy-status-dot"></span>En Producción</span>
+            </div>
+            <div class="deploy-list">
+              <div class="deploy-item"><div class="deploy-check">✓</div><span>Arquitectura configurada</span></div>
+              <div class="deploy-item"><div class="deploy-check">✓</div><span>Tests de integración superados</span></div>
+              <div class="deploy-item"><div class="deploy-check">✓</div><span>IA entrenada con datos del cliente</span></div>
+              <div class="deploy-item active"><div class="deploy-check">✓</div><span>Automatizaciones activas</span></div>
+              <div class="deploy-item pending"><div class="deploy-check"></div><span style="color:var(--dim)">Escalado en progreso…</span></div>
+            </div>
+            <div class="deploy-bar">
+              <div class="deploy-bar-label"><span>Progreso de implementación</span><span style="color:var(--green)">78%</span></div>
+              <div class="deploy-bar-track"><div class="deploy-bar-fill"></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══ S8 AI CARDS ══════════════════════════════════════════ -->
+<section class="ai-cards" id="nosotros">
+  <div class="wrap">
+    <div class="ai-cards-hd reveal">
+      <div class="tag-pill" style="margin-bottom:14px">Capacidades Corvex</div>
+      <h2 class="h2" style="margin-bottom:14px">Construye sin límites con <span>Corvex</span></h2>
+      <p class="sub" style="max-width:520px;margin:0 auto">Cada solución que entregamos está diseñada para crecer contigo, integrarse con tu stack y generar valor desde el primer día.</p>
+    </div>
+    <div class="ai-grid">
+      <div class="acard reveal"><div class="acard-inner"><div class="acard-icon"><img src="https://cdn.prod.website-files.com/68f4ee72649c170da7026b71/68f875e55040500c5d0f777a_AI%20Limits%20Icon%20(1).svg" alt=""></div><h3>Páginas Web Profesionales</h3><p>Diseños modernos y enfocados en conversión. Velocidad, SEO y experiencia de usuario como pilares fundamentales.</p></div></div>
+      <div class="acard reveal" style="transition-delay:.08s"><div class="acard-inner"><div class="acard-icon"><img src="https://cdn.prod.website-files.com/68f4ee72649c170da7026b71/68f875e4e48b94ed96888a37_AI%20Limits%20Icon%20(2).svg" alt=""></div><h3>Aplicaciones Personalizadas</h3><p>Apps móviles y sistemas a medida. Android, iOS o multiplataforma, adaptadas exactamente a tu proceso interno.</p></div></div>
+      <div class="acard reveal" style="transition-delay:.16s"><div class="acard-inner"><div class="acard-icon"><img src="https://cdn.prod.website-files.com/68f4ee72649c170da7026b71/68f875e47e304cacb0ab6b13_AI%20Limits%20Icon%20(3).svg" alt=""></div><h3>Automatización Inteligente</h3><p>Optimiza procesos internos automáticamente. Flujos de trabajo que operan solos, sin errores y sin intervención manual.</p></div></div>
+      <div class="acard reveal" style="transition-delay:.24s"><div class="acard-inner"><div class="acard-icon"><img src="https://cdn.prod.website-files.com/68f4ee72649c170da7026b71/68f875e4364a2fdf36c7ea25_AI%20Limits%20Icon%20(4).svg" alt=""></div><h3>IA Aplicada a Negocios</h3><p>Mejora decisiones con inteligencia artificial. Análisis predictivo, chatbots empresariales y modelos entrenados en tus datos.</p></div></div>
+      <div class="acard reveal" style="transition-delay:.32s"><div class="acard-inner"><div class="acard-icon"><img src="https://cdn.prod.website-files.com/68f4ee72649c170da7026b71/68f875e4812a578049282a7e_AI%20Limits%20Icon%20(5).svg" alt=""></div><h3>Sistemas Integrados</h3><p>Todo tu negocio conectado en una sola plataforma. Web, app, CRM, ERP y IA operando como un único ecosistema.</p></div></div>
+      <div class="acard reveal" style="transition-delay:.4s"><div class="acard-inner"><div class="acard-icon"><img src="https://cdn.prod.website-files.com/68f4ee72649c170da7026b71/68f875e4da5160364bd19167_AI%20Limits%20Icon%20(6).svg" alt=""></div><h3>Escalabilidad Digital</h3><p>Soluciones que crecen contigo. Arquitecturas diseñadas para soportar más usuarios, más datos y más operaciones.</p></div></div>
+    </div>
+    <div class="ai-cards-cta reveal"><a href="https://wa.link/z3xyjw" target="_blank" rel="noopener" class="btn-main">Hablar con un especialista <img src="https://cdn.prod.website-files.com/68f4ee72649c170da7026b71/68f7634d777f6053da052008_Button%20Icon%20(1).svg" alt=""></a></div>
+  </div>
+</section>
+
+<!-- ═══ S9 CTA MID + EDITOR CSS ══════════════════════════════ -->
+<section class="ctamid">
+  <div class="wrap">
+    <div class="ctamid-in">
+      <div class="ctamid-text reveal">
+        <div class="tag-pill">Evolución digital</div>
+        <h2 class="h2" style="margin-top:20px;margin-bottom:16px">Construye tu empresa digital desde cero o evoluciona la que ya tienes</h2>
+        <p class="sub">Desarrollamos páginas web, aplicaciones móviles y sistemas inteligentes con automatización e inteligencia artificial.</p>
+        <div style="margin-top:28px"><a href="https://wa.link/z3xyjw" target="_blank" rel="noopener" class="btn-main">Hablar con un especialista <img src="https://cdn.prod.website-files.com/68f4ee72649c170da7026b71/68f7634d777f6053da052008_Button%20Icon%20(1).svg" alt=""></a></div>
+      </div>
+      <!-- Editor de codigo CSS -->
+      <div class="reveal" style="transition-delay:.14s">
+        <div class="css-window code-editor">
+          <div class="css-window-bar">
+            <span class="css-dot r"></span><span class="css-dot y"></span><span class="css-dot g"></span>
+            <span class="css-wintitle">corvex-automation / workflow.py</span>
+          </div>
+          <div class="code-editor-body">
+            <div class="code-line"><span class="ln">1</span><span class="cm"># Corvex Automation Engine</span></div>
+            <div class="code-line"><span class="ln">2</span><span class="kw">from</span><span class="fn"> corvex </span><span class="kw">import</span><span class="fn"> AI, WebApp, MobileApp</span></div>
+            <div class="code-line"><span class="ln">3</span></div>
+            <div class="code-line"><span class="ln">4</span><span class="kw">class</span><span class="fn"> DigitalEcosystem</span><span class="op">:</span></div>
+            <div class="code-line"><span class="ln">5</span>&nbsp;&nbsp;<span class="kw">def</span><span class="fn"> __init__</span><span class="op">(</span><span class="fn">self, empresa</span><span class="op">):</span></div>
+            <div class="code-line"><span class="ln">6</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="fn">self.web</span><span class="op"> = </span><span class="fn">WebApp</span><span class="op">(</span><span class="fn">empresa</span><span class="op">)</span></div>
+            <div class="code-line"><span class="ln">7</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="fn">self.app</span><span class="op"> = </span><span class="fn">MobileApp</span><span class="op">(</span><span class="fn">empresa</span><span class="op">)</span></div>
+            <div class="code-line"><span class="ln">8</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="fn">self.ia</span><span class="op"> = </span><span class="fn">AI</span><span class="op">.</span><span class="fn">train</span><span class="op">(</span><span class="fn">empresa</span><span class="op">.</span><span class="fn">data</span><span class="op">)</span></div>
+            <div class="code-line"><span class="ln">9</span></div>
+            <div class="code-line"><span class="ln">10</span>&nbsp;&nbsp;<span class="kw">def</span><span class="fn"> automate</span><span class="op">(</span><span class="fn">self</span><span class="op">):</span></div>
+            <div class="code-line"><span class="ln">11</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="fn">flows</span><span class="op"> = </span><span class="fn">self.ia</span><span class="op">.</span><span class="fn">generate_flows</span><span class="op">()</span></div>
+            <div class="code-line"><span class="ln">12</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="kw">for</span><span class="fn"> flow </span><span class="kw">in</span><span class="fn"> flows</span><span class="op">:</span></div>
+            <div class="code-line"><span class="ln">13</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="fn">flow</span><span class="op">.</span><span class="fn">deploy</span><span class="op">()</span><span class="cursor-blink"></span></div>
+            <div class="code-line"><span class="ln">14</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="kw">return</span><span class="str"> "Sistema optimizado"</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ S11 IA ════════════════════════════════════════════════ -->
+<section class="ia">
+  <div class="wrap">
+    <div class="ia-in">
+      <div class="ia-text reveal">
+        <div class="tag-pill" style="margin-bottom:20px">IA Empresarial</div>
+        <h2 class="h2" style="margin-bottom:18px">Automatización e Inteligencia Artificial aplicada a empresas</h2>
+        <p class="sub" style="margin-bottom:32px">Transformamos procesos empresariales mediante inteligencia artificial, automatización y sistemas digitales que reducen costos, eliminan tareas manuales y mejoran la eficiencia operativa.</p>
+        <div class="ia-bens">
+          <div class="ia-ben"><img src="https://cdn.prod.website-files.com/68f4ee72649c170da7026b71/68f8da899e590fbe6281bbc4_Check%20Icon.svg" alt="">Automatización de procesos internos</div>
+          <div class="ia-ben"><img src="https://cdn.prod.website-files.com/68f4ee72649c170da7026b71/68f8da899e590fbe6281bbc4_Check%20Icon.svg" alt="">IA para análisis y decisiones</div>
+          <div class="ia-ben"><img src="https://cdn.prod.website-files.com/68f4ee72649c170da7026b71/68f8da899e590fbe6281bbc4_Check%20Icon.svg" alt="">Reducción de carga operativa</div>
+          <div class="ia-ben"><img src="https://cdn.prod.website-files.com/68f4ee72649c170da7026b71/68f8da899e590fbe6281bbc4_Check%20Icon.svg" alt="">Integración con web y apps</div>
+          <div class="ia-ben"><img src="https://cdn.prod.website-files.com/68f4ee72649c170da7026b71/68f8da899e590fbe6281bbc4_Check%20Icon.svg" alt="">Escalabilidad empresarial</div>
+        </div>
+      </div>
+      <div class="ia-vis reveal" style="transition-delay:.14s">
+        <div class="ia-stat"><div class="ia-stat-row"><span class="ia-stat-label">Reducción de tareas manuales</span><span class="ia-stat-val">85%</span></div><div class="ia-bar"><div class="ia-fill" data-w="85"></div></div></div>
+        <div class="ia-stat"><div class="ia-stat-row"><span class="ia-stat-label">Velocidad de procesos internos</span><span class="ia-stat-val">3x</span></div><div class="ia-bar"><div class="ia-fill" data-w="70"></div></div></div>
+        <div class="ia-stat"><div class="ia-stat-row"><span class="ia-stat-label">Precisión en análisis de datos</span><span class="ia-stat-val">92%</span></div><div class="ia-bar"><div class="ia-fill" data-w="92"></div></div></div>
+        <div class="ia-stat"><div class="ia-stat-row"><span class="ia-stat-label">Integración con sistemas existentes</span><span class="ia-stat-val">100%</span></div><div class="ia-bar"><div class="ia-fill" data-w="100"></div></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ S12 FAQ ═══════════════════════════════════════════════ -->
+<section class="faq">
+  <div class="wrap">
+    <div class="faq-hd reveal"><div class="tag-pill" style="margin-bottom:14px">Preguntas frecuentes</div><h2 class="h2">Todo lo que necesitas saber</h2></div>
+    <div class="faq-list">
+      <div class="faq-item open"><div class="faq-q">¿Desarrollan páginas web personalizadas?<span class="faq-arr"><img src="https://cdn.prod.website-files.com/68f4ee72649c170da7026b71/68f64e45d5c3338dd7d37e51_Arrow.svg" alt=""></span></div><div class="faq-body"><p>¡Sí! Cada sitio lo construimos desde cero, adaptado a tu marca y objetivos. Sin plantillas genéricas: todo pensado para atraer visitas y convertirlas en clientes reales.</p></div></div>
+      <div class="faq-item open"><div class="faq-q">¿Crean aplicaciones móviles?<span class="faq-arr"><img src="https://cdn.prod.website-files.com/68f4ee72649c170da7026b71/68f64e45d5c3338dd7d37e51_Arrow.svg" alt=""></span></div><div class="faq-body"><p>¡Claro! Desarrollamos apps para Android, iOS o ambas plataformas, integradas con tus sistemas para que todo tu negocio opere en un solo lugar sin fricciones.</p></div></div>
+      <div class="faq-item open"><div class="faq-q">¿Implementan inteligencia artificial en empresas?<span class="faq-arr"><img src="https://cdn.prod.website-files.com/68f4ee72649c170da7026b71/68f64e45d5c3338dd7d37e51_Arrow.svg" alt=""></span></div><div class="faq-body"><p>¡Exacto! Aplicamos IA donde más impacta: análisis de datos, chatbots, atención automatizada y toma de decisiones inteligente basada en los datos reales de tu empresa.</p></div></div>
+      <div class="faq-item open"><div class="faq-q">¿Pueden automatizar procesos internos?<span class="faq-arr"><img src="https://cdn.prod.website-files.com/68f4ee72649c170da7026b71/68f64e45d5c3338dd7d37e51_Arrow.svg" alt=""></span></div><div class="faq-body"><p>¡Por supuesto! Identificamos qué tareas pueden trabajar solas y creamos flujos inteligentes que eliminan el trabajo manual. Menos errores, más tiempo para lo que de verdad importa.</p></div></div>
+      <div class="faq-item open"><div class="faq-q">¿Qué tipo de empresas pueden trabajar con Corvex?<span class="faq-arr"><img src="https://cdn.prod.website-files.com/68f4ee72649c170da7026b71/68f64e45d5c3338dd7d37e51_Arrow.svg" alt=""></span></div><div class="faq-body"><p>¡Todo tipo! Desde startups que recién arrancan hasta empresas consolidadas que quieren modernizarse. Nos adaptamos a tu etapa, presupuesto y metas sin complicaciones.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ S13 CTA FINAL ═════════════════════════════════════════ -->
+<section class="ctafin" id="contacto">
+  <div class="ctafin-bg"></div>
+  <div class="ctafin-overlay"></div>
+  <div class="ctafin-in reveal">
+    <div class="tag-pill">Transformación digital</div>
+    <h2 class="h2" style="margin-top:24px">Convierte tu empresa en un sistema digital <span>inteligente</span></h2>
+    <p class="sub" style="margin-top:18px">Web, apps, automatización e inteligencia artificial en un solo lugar.</p>
+    <div class="ctafin-btns" style="margin-top:36px">
+      <a href="https://wa.link/z3xyjw" target="_blank" rel="noopener" class="btn-main">Solicitar asesoría <img src="https://cdn.prod.website-files.com/68f4ee72649c170da7026b71/68f7634d777f6053da052008_Button%20Icon%20(1).svg" alt=""></a>
+      <a href="#servicios" class="btn-ghost">Ver servicios</a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ S14 FOOTER ════════════════════════════════════════════ -->
+<footer>
+  <div class="wrap">
+    <div class="foot-top">
+      <div class="foot-brand">
+        <div class="foot-logo">Cor<span>vex</span> Corporación</div>
+        <p>Corvex Corporación — Desarrollo web, aplicaciones móviles, automatización e inteligencia artificial para empresas que quieren crecer en el mundo digital.</p>
+        <div class="foot-socials">
+          <a href="#" class="foot-social"><img src="https://cdn.prod.website-files.com/68f4ee72649c170da7026b71/68f63e7f6c2d57d0ac180345_Social%20Icons%20(2).svg" alt="LinkedIn"></a>
+          <a href="#" class="foot-social"><img src="https://cdn.prod.website-files.com/68f4ee72649c170da7026b71/68f63e7ff48a5d3937a852c7_Social%20Icons.svg" alt="Facebook"></a>
+          <a href="#" class="foot-social"><img src="https://cdn.prod.website-files.com/68f4ee72649c170da7026b71/68f63ede16828061c6ccf401_Social%20Icons%20(5).svg" alt="Instagram"></a>
+        </div>
+      </div>
+      <div class="foot-col"><h4>Navegación</h4><a href="#inicio">Inicio</a><a href="#servicios">Servicios</a><a href="#nosotros">Nosotros</a><a href="#contacto">Contacto</a></div>
+      <div class="foot-col"><h4>Servicios</h4><a href="#servicios">Páginas Web</a><a href="#servicios">Aplicaciones Móviles</a><a href="#servicios">Automatización</a><a href="#servicios">Inteligencia Artificial</a></div>
+    </div>
+    <div class="foot-bottom">
+      <p>© 2026 Corvex Corporación. Todos los derechos reservados.</p>
+      <p>contacto@corvex.digital</p>
+    </div>
+  </div>
+</footer>
+
+<!-- ═══ JAVASCRIPT ════════════════════════════════════════════ -->
+<script>
+// Navbar
+const nav = document.getElementById('nav');
+window.addEventListener('scroll', () => nav.classList.toggle('solid', window.scrollY > 40));
+
+// Mobile menu
+document.getElementById('hbg').addEventListener('click', () => document.getElementById('mob').classList.toggle('open'));
+function cm() { document.getElementById('mob').classList.remove('open'); }
+
+// Scroll reveal
+const ro = new IntersectionObserver(entries => {
+  entries.forEach(e => { if(e.isIntersecting){ e.target.classList.add('on'); ro.unobserve(e.target); }});
+}, {threshold:0.1});
+document.querySelectorAll('.reveal').forEach(el => ro.observe(el));
+
+// FAQ
+document.querySelectorAll('.faq-q').forEach(q => {
+  q.addEventListener('click', () => {
+    const item = q.parentElement, open = item.classList.contains('open');
+    document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+    if(!open) item.classList.add('open');
+  });
+});
+
+// Animacion de barras al entrar en viewport
+function animateBars(selector) {
+  const obs = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if(e.isIntersecting) {
+        e.target.querySelectorAll('[data-w]').forEach(b => { b.style.width = b.dataset.w + '%'; });
+        obs.unobserve(e.target);
+      }
+    });
+  }, {threshold:0.3});
+  document.querySelectorAll(selector).forEach(el => obs.observe(el));
+}
+animateBars('.ia-vis');
+animateBars('#analysisProgress');
+
+// Contadores animados hero dashboard
+function countUp(id, target, suffix='', duration=1800) {
+  const el = document.getElementById(id);
+  if(!el) return;
+  const obs = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if(e.isIntersecting) {
+        let start = 0, step = target / (duration / 16);
+        const timer = setInterval(() => {
+          start = Math.min(start + step, target);
+          el.textContent = Math.floor(start) + suffix;
+          if(start >= target) clearInterval(timer);
+        }, 16);
+        obs.unobserve(e.target);
+      }
+    });
+  }, {threshold:0.5});
+  obs.observe(el);
+}
+countUp('an1', 8, '');
+countUp('an2', 24, '');
+countUp('an3', 47, '');
+countUp('an4', 91, '%');
+</script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Corvex Corporación — Web, Apps e Inteligencia Artificial</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+<style>
+/* ══════════════════════════════════════════════════════════
+   VARIABLES
+══════════════════════════════════════════════════════════ */
+:root{
+  --bg:     #08090e;
+  --bg2:    #0d0f16;
+  --card:   #111318;
+  --card2:  #0d1017;
+  --border: rgba(255,255,255,0.07);
+  --green:  #a3e635;
+  --green2: #84cc16;
+  --blue:   #38bdf8;
+  --purple: #a78bfa;
+  --text:   #f1f5f9;
+  --muted:  #94a3b8;
+  --dim:    #475569;
+  --r:      14px;
+  --r-sm:   8px;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--text);overflow-x:hidden;line-height:1.6}
+a{text-decoration:none;color:inherit}
+ul{list-style:none}
+img{max-width:100%;display:block}
+
+/* ══════════════════════════════════════════════════════════
+   UTILIDADES
+══════════════════════════════════════════════════════════ */
+.wrap{max-width:1200px;margin:0 auto;padding:0 32px}
+.tag-pill{display:inline-flex;align-items:center;gap:8px;background:rgba(163,230,53,0.08);border:1px solid rgba(163,230,53,0.2);border-radius:100px;padding:7px 16px;font-size:13px;font-weight:500;color:var(--green)}
+.tag-pill img{width:16px;height:16px}
+.h2{font-size:clamp(28px,3.8vw,48px);font-weight:800;line-height:1.12;letter-spacing:-.8px}
+.h2 span{background:linear-gradient(135deg,var(--green),var(--blue));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.sub{font-size:16px;color:var(--muted);line-height:1.75}
+.btn-main{display:inline-flex;align-items:center;gap:10px;background:var(--green);color:#0a0c10;padding:14px 26px;border-radius:var(--r-sm);font-size:15px;font-weight:700;cursor:pointer;border:none;transition:.22s}
+.btn-main:hover{background:var(--green2);transform:translateY(-2px);box-shadow:0 8px 28px rgba(163,230,53,.28)}
+.btn-main img{width:18px;height:18px}
+.btn-ghost{display:inline-flex;align-items:center;gap:8px;background:transparent;color:var(--text);padding:14px 26px;border-radius:var(--r-sm);font-size:15px;font-weight:600;border:1px solid var(--border);cursor:pointer;transition:.22s}
+.btn-ghost:hover{border-color:rgba(163,230,53,.3);color:var(--green)}
+.reveal{opacity:0;transform:translateY(32px);transition:opacity .65s ease,transform .65s ease}
+.reveal.on{opacity:1;transform:none}
+
+/* ══════════════════════════════════════════════════════════
+   COMPONENTE BASE: VENTANA CSS
+══════════════════════════════════════════════════════════ */
+.css-window{
+  background:var(--card2);
+  border:1px solid var(--border);
+  border-radius:var(--r);
+  overflow:hidden;
+  box-shadow:0 24px 80px rgba(0,0,0,.6);
+}
+.css-window-bar{
+  display:flex;align-items:center;gap:8px;
+  padding:12px 16px;
+  background:rgba(255,255,255,.03);
+  border-bottom:1px solid var(--border);
+}
+.css-dot{width:11px;height:11px;border-radius:50%}
+.css-dot.r{background:#ff5f57}
+.css-dot.y{background:#febc2e}
+.css-dot.g{background:#28c840}
+.css-wintitle{margin-left:8px;font-size:12px;color:var(--dim);font-weight:500}
+
+/* ══════════════════════════════════════════════════════════
+   NAVBAR
+══════════════════════════════════════════════════════════ */
+#nav{position:fixed;inset:0 0 auto;z-index:999;padding:0 32px;transition:background .3s,border .3s}
+#nav.solid{background:rgba(8,9,14,.9);backdrop-filter:blur(20px);border-bottom:1px solid var(--border)}
+.nav-in{max-width:1200px;margin:0 auto;height:68px;display:flex;align-items:center;justify-content:space-between}
+.nav-logo{font-size:19px;font-weight:800;letter-spacing:-.3px}
+.nav-logo span{color:var(--green)}
+.nav-links{display:flex;gap:34px}
+.nav-links a{font-size:14px;font-weight:500;color:var(--muted);transition:.2s}
+.nav-links a:hover{color:var(--text)}
+.nav-right{display:flex;gap:12px}
+.hbg{display:none;flex-direction:column;gap:5px;cursor:pointer}
+.hbg span{width:22px;height:2px;background:var(--text);border-radius:2px}
+.mob{display:none;position:fixed;inset:0;background:var(--bg2);z-index:998;flex-direction:column;align-items:center;justify-content:center;gap:28px}
+.mob.open{display:flex}
+.mob a{font-size:22px;font-weight:700}
+
+/* ══════════════════════════════════════════════════════════
+   HERO
+══════════════════════════════════════════════════════════ */
+.hero{position:relative;min-height:100vh;display:flex;align-items:center;padding-top:68px;overflow:hidden}
+.hero-grid{position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.03) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.03) 1px,transparent 1px);background-size:48px 48px;mask-image:radial-gradient(ellipse 80% 70% at 50% 40%,black,transparent);pointer-events:none}
+.hero-glow{position:absolute;top:30%;left:55%;transform:translate(-50%,-50%);width:700px;height:700px;background:radial-gradient(circle,rgba(163,230,53,.1) 0%,rgba(56,189,248,.06) 45%,transparent 70%);filter:blur(60px);pointer-events:none;animation:glowPulse 5s ease-in-out infinite}
+.hero-in{position:relative;z-index:2;display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center;padding:80px 32px;max-width:1200px;margin:0 auto;width:100%}
+.hero-h1{font-size:clamp(34px,4.5vw,58px);font-weight:900;line-height:1.08;letter-spacing:-1.2px;margin:20px 0}
+.hero-h1 span{background:linear-gradient(135deg,var(--green),var(--blue));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.hero-p{font-size:16px;color:var(--muted);line-height:1.78;max-width:480px;margin-bottom:34px}
+
+/* ── HERO PLANET CSS ── */
+.hero-visual{position:relative;display:flex;align-items:center;justify-content:center}
+.planet-wrap{width:100%;max-width:560px;animation:planetFloat 7s ease-in-out infinite}
+.planet-svg{width:100%;height:auto;overflow:visible}
+/* Grid de latitud/longitud del planeta — rotación lenta */
+.pgrid{transform-origin:270px 240px;animation:pgridSpin 22s linear infinite}
+/* Tags flotantes */
+.ptag-1{animation:tagFloat1 5s ease-in-out infinite}
+.ptag-2{animation:tagFloat2 5.5s ease-in-out infinite .4s}
+.ptag-3{animation:tagFloat3 6s ease-in-out infinite .8s}
+.ptag-4{animation:tagFloat2 5.2s ease-in-out infinite 1.2s}
+.ptag-5{animation:tagFloat1 5.8s ease-in-out infinite 1.6s}
+/* Satélites orbitantes */
+.sat1{animation:sat1Orbit 14s linear infinite}
+.sat2{animation:sat1Orbit 14s linear infinite -7s}
+.sat3{animation:sat2Orbit 18s linear infinite -4s}
+@keyframes pgridSpin{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}
+@keyframes planetFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}
+@keyframes tagFloat1{0%,100%{transform:translateY(0)}50%{transform:translateY(-5px)}}
+@keyframes tagFloat2{0%,100%{transform:translateY(0)}50%{transform:translateY(-4px)}}
+@keyframes tagFloat3{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
+@keyframes sat1Orbit{
+  0%{transform:translate(185px,0)}
+  25%{transform:translate(0,58px)}
+  50%{transform:translate(-185px,0)}
+  75%{transform:translate(0,-58px)}
+  100%{transform:translate(185px,0)}
+}
+@keyframes sat2Orbit{
+  0%{transform:translate(-155px,0) rotate(20deg)}
+  50%{transform:translate(155px,0) rotate(20deg)}
+  100%{transform:translate(-155px,0) rotate(20deg)}
+}
+
+/* ══════════════════════════════════════════════════════════
+   S3 LOGOS CAROUSEL
+══════════════════════════════════════════════════════════ */
+.logos-sec{padding:52px 0;border-top:1px solid var(--border);border-bottom:1px solid var(--border);overflow:hidden}
+.logos-txt{text-align:center;font-size:13px;font-weight:500;color:var(--dim);letter-spacing:.6px;text-transform:uppercase;margin-bottom:28px}
+.car-wrap{overflow:hidden;mask-image:linear-gradient(90deg,transparent,black 12%,black 88%,transparent)}
+.car-track{display:flex;gap:48px;animation:carScroll 30s linear infinite;width:max-content}
+.car-track:hover{animation-play-state:paused}
+.car-logo{height:28px;opacity:.4;filter:brightness(.8);transition:.2s}
+.car-logo:hover{opacity:.85;filter:brightness(1)}
+
+/* ══════════════════════════════════════════════════════════
+   S4 POWER — ARQUITECTURA CSS
+══════════════════════════════════════════════════════════ */
+.power{padding:120px 0}
+.power-in{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:center}
+.power-text .tag-pill{margin-bottom:20px}
+.power-text .h2{margin-bottom:18px}
+/* Diagrama de arquitectura CSS */
+.arch-diagram{display:flex;flex-direction:column;gap:0}
+.arch-row{display:flex;justify-content:center;gap:12px}
+.arch-node{background:var(--card2);border:1px solid var(--border);border-radius:var(--r-sm);padding:12px 16px;display:flex;align-items:center;gap:8px;font-size:13px;font-weight:600;color:var(--muted);transition:.3s;cursor:default;white-space:nowrap}
+.arch-node:hover{border-color:rgba(163,230,53,.3);color:var(--text)}
+.arch-node.core{background:rgba(163,230,53,.06);border-color:rgba(163,230,53,.25);color:var(--green);font-size:14px;padding:14px 24px}
+.arch-node .n-icon{font-size:18px}
+.arch-connector{display:flex;justify-content:center;align-items:center;height:32px;gap:48px}
+.arch-line-v{width:1px;height:100%;background:linear-gradient(var(--green2),rgba(163,230,53,.1))}
+.arch-line-h-wrap{display:flex;align-items:center;gap:0;position:relative}
+.arch-line-h{height:1px;width:48px;background:linear-gradient(90deg,rgba(163,230,53,.1),var(--green2))}
+.arch-line-h.r{background:linear-gradient(90deg,var(--green2),rgba(163,230,53,.1))}
+.arch-dot{width:6px;height:6px;border-radius:50%;background:var(--green);animation:dotBlink 2s ease-in-out infinite}
+
+/* ══════════════════════════════════════════════════════════
+   S5 FEATURE CARDS — GRAFICOS CSS
+══════════════════════════════════════════════════════════ */
+.feat4{padding:0 0 120px}
+.feat4-hd{text-align:center;margin-bottom:48px}
+.feat4-hd .h2{margin-bottom:14px}
+.feat4-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.fc{background:var(--card);border:1px solid var(--border);border-radius:var(--r);overflow:hidden;transition:.28s;position:relative}
+.fc:hover{border-color:rgba(163,230,53,.22);transform:translateY(-4px);box-shadow:0 16px 48px rgba(0,0,0,.35)}
+/* Zona grafico de cada card */
+.fc-graphic{aspect-ratio:16/9;background:var(--card2);border-bottom:1px solid var(--border);display:flex;align-items:center;justify-content:center;padding:24px;position:relative;overflow:hidden}
+.fc-graphic::before{content:'';position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.02) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.02) 1px,transparent 1px);background-size:24px 24px}
+.fc-body{padding:22px}
+.fc-body h3{font-size:17px;font-weight:700;margin-bottom:8px;letter-spacing:-.2px}
+.fc-body p{font-size:13px;color:var(--muted);line-height:1.68}
+
+/* ── CARD 1: Website Mockup ── */
+.web-mockup{width:100%;max-width:320px;position:relative;z-index:1}
+.wm-chrome{background:rgba(255,255,255,.04);border:1px solid var(--border);border-radius:8px 8px 0 0;padding:8px 12px;display:flex;align-items:center;gap:6px}
+.wm-url{flex:1;background:rgba(255,255,255,.05);border-radius:4px;padding:3px 10px;font-size:10px;color:var(--dim);font-family:'Fira Code',monospace;text-align:center}
+.wm-body{background:rgba(6,7,12,.9);border:1px solid var(--border);border-top:none;border-radius:0 0 8px 8px;overflow:hidden}
+.wm-nav{display:flex;align-items:center;gap:8px;padding:7px 10px;border-bottom:1px solid var(--border)}
+.wm-nav-logo{width:32px;height:6px;border-radius:3px;background:var(--green);opacity:.7}
+.wm-nav-links{flex:1;display:flex;gap:6px}
+.wm-nav-link{width:18px;height:4px;border-radius:2px;background:rgba(255,255,255,.12)}
+.wm-nav-btn{width:28px;height:11px;border-radius:3px;background:rgba(163,230,53,.2);border:1px solid rgba(163,230,53,.35)}
+.wm-hero{display:grid;grid-template-columns:1fr 1fr;gap:8px;padding:10px;background:linear-gradient(135deg,rgba(163,230,53,.03),rgba(56,189,248,.03))}
+.wm-hero-text{display:flex;flex-direction:column;gap:5px;justify-content:center}
+.wm-h-title{height:7px;border-radius:3px;background:rgba(255,255,255,.25);width:90%}
+.wm-h-title.sm{height:5px;width:70%;background:rgba(255,255,255,.15)}
+.wm-h-sub{height:4px;border-radius:2px;background:rgba(255,255,255,.1);width:80%}
+.wm-h-sub.sm{width:60%}
+.wm-h-cta{margin-top:3px;width:44px;height:11px;border-radius:3px;background:rgba(163,230,53,.35)}
+.wm-hero-img{background:linear-gradient(135deg,rgba(163,230,53,.06),rgba(56,189,248,.06));border:1px solid var(--border);border-radius:6px;display:flex;align-items:flex-end;justify-content:center;padding:8px 6px 0}
+.wm-bars-mini{display:flex;align-items:flex-end;gap:3px}
+.wm-bar-mini{width:9px;border-radius:2px 2px 0 0;background:linear-gradient(180deg,var(--green),rgba(56,189,248,.5))}
+.wm-feat-row{display:grid;grid-template-columns:1fr 1fr 1fr;gap:5px;padding:8px 10px 10px}
+.wm-feat{background:rgba(255,255,255,.03);border:1px solid var(--border);border-radius:5px;padding:7px 6px;display:flex;flex-direction:column;gap:4px}
+.wm-feat-icon{width:12px;height:12px;border-radius:3px;background:rgba(163,230,53,.25)}
+.wm-feat-line{height:3px;border-radius:2px;background:rgba(255,255,255,.12)}
+.wm-feat-line.sh{width:65%}
+/* metric strip */
+.wm-metrics{display:flex;gap:0;border-top:1px solid var(--border)}
+.wm-metric{flex:1;padding:6px 8px;text-align:center;border-right:1px solid var(--border)}
+.wm-metric:last-child{border-right:none}
+.wm-metric-val{font-size:11px;font-weight:800;color:var(--green)}
+.wm-metric-lbl{font-size:8px;color:var(--dim);margin-top:1px}
+
+/* ── CARD 2: App Phone + Panel ── */
+.app-phone-wrap{position:relative;z-index:1;display:flex;align-items:center;justify-content:center;gap:16px}
+.app-phone{width:112px;background:var(--card2);border:2px solid rgba(255,255,255,.12);border-radius:22px;overflow:hidden;box-shadow:0 16px 48px rgba(0,0,0,.6),0 0 0 1px rgba(255,255,255,.04)}
+.app-phone-inner{padding:8px 6px 6px}
+.app-status{display:flex;justify-content:space-between;align-items:center;padding:3px 2px 5px;border-bottom:1px solid var(--border)}
+.app-status-time{font-size:7px;font-weight:700;color:var(--text);font-family:'Fira Code',monospace}
+.app-status-icons{display:flex;gap:3px;align-items:center}
+.app-status-bar{width:12px;height:4px;border:1px solid rgba(163,230,53,.5);border-radius:1px;position:relative;overflow:hidden}
+.app-status-bar::after{content:'';position:absolute;inset:1px;right:2px;background:var(--green);border-radius:1px}
+.app-header-bar{padding:5px 2px 4px;display:flex;justify-content:space-between;align-items:center}
+.app-header-title{font-size:8px;font-weight:700;color:var(--text)}
+.app-header-badge{font-size:7px;background:rgba(163,230,53,.15);color:var(--green);border-radius:10px;padding:1px 5px;font-weight:700}
+.app-kpi-row{display:grid;grid-template-columns:1fr 1fr;gap:4px;margin-bottom:5px}
+.app-kpi{background:rgba(255,255,255,.04);border:1px solid var(--border);border-radius:5px;padding:5px 3px;text-align:center}
+.app-kpi-val{font-size:12px;font-weight:800;color:var(--green);display:block}
+.app-kpi-val.b{color:var(--blue)}
+.app-kpi-lbl{font-size:6px;color:var(--dim);margin-top:1px}
+.app-chart-area{background:rgba(255,255,255,.02);border:1px solid var(--border);border-radius:5px;padding:5px 4px;margin-bottom:5px}
+.app-chart-title{font-size:7px;color:var(--muted);margin-bottom:4px}
+.app-bars{display:flex;align-items:flex-end;gap:2px;height:24px}
+.app-bar{flex:1;border-radius:2px 2px 0 0;background:rgba(163,230,53,.2);min-width:6px}
+.app-bar.hi{background:linear-gradient(180deg,var(--green),rgba(163,230,53,.3))}
+.app-list-row{display:flex;align-items:center;gap:5px;padding:3px 0;border-bottom:1px solid rgba(255,255,255,.04)}
+.app-list-row:last-child{border:none}
+.app-list-dot{width:5px;height:5px;border-radius:50%;background:var(--green);flex-shrink:0}
+.app-list-dot.b{background:var(--blue)}
+.app-list-lines{flex:1;display:flex;flex-direction:column;gap:2px}
+.app-list-line{height:3px;border-radius:2px;background:rgba(255,255,255,.12)}
+.app-list-line.sm{width:60%}
+.app-list-val{font-size:7px;font-weight:700;color:var(--green)}
+.app-nav{display:flex;justify-content:space-around;padding:5px 2px 2px;border-top:1px solid var(--border);margin-top:4px}
+.app-nav-item{display:flex;flex-direction:column;align-items:center;gap:2px}
+.app-nav-icon{width:10px;height:10px;border-radius:3px;border:1px solid rgba(255,255,255,.1)}
+.app-nav-icon.act{border-color:var(--green);background:rgba(163,230,53,.12)}
+.app-nav-dot{width:4px;height:4px;border-radius:50%;background:transparent}
+.app-nav-dot.act{background:var(--green)}
+/* panel lateral */
+.app-panel{width:130px;background:var(--card2);border:1px solid var(--border);border-radius:10px;overflow:hidden;box-shadow:0 8px 24px rgba(0,0,0,.4)}
+.app-panel-header{background:rgba(255,255,255,.03);border-bottom:1px solid var(--border);padding:7px 10px;display:flex;align-items:center;gap:6px}
+.app-panel-dot{width:7px;height:7px;border-radius:50%;background:var(--green);animation:dotBlink 1.5s ease-in-out infinite}
+.app-panel-title{font-size:9px;font-weight:700;color:var(--muted)}
+.app-panel-body{padding:8px}
+.app-panel-row{display:flex;align-items:center;gap:6px;padding:5px 6px;margin-bottom:4px;background:rgba(255,255,255,.02);border:1px solid var(--border);border-radius:5px}
+.app-panel-row:last-child{margin-bottom:0}
+.app-panel-icon{font-size:12px;width:20px;height:20px;display:flex;align-items:center;justify-content:center;background:rgba(163,230,53,.08);border:1px solid rgba(163,230,53,.15);border-radius:5px;flex-shrink:0}
+.app-panel-info{flex:1}
+.app-panel-name{font-size:8px;font-weight:600;color:var(--text)}
+.app-panel-sub{font-size:7px;color:var(--dim)}
+.app-panel-val{font-size:9px;font-weight:700;color:var(--green)}
+
+/* ── CARD 3: Automation Pipeline ── */
+.pipe-wrap{position:relative;z-index:1;display:flex;flex-direction:column;width:100%;max-width:290px}
+.pipe-step{display:flex;align-items:center;gap:11px;border:1px solid var(--border);border-radius:var(--r-sm);padding:10px 12px}
+.pipe-step.trig{border-color:rgba(163,230,53,.35);background:rgba(163,230,53,.04)}
+.pipe-step.proc{border-color:rgba(56,189,248,.3);background:rgba(56,189,248,.04)}
+.pipe-step.actn{border-color:rgba(167,139,250,.3);background:rgba(167,139,250,.04)}
+.pipe-icon-box{width:34px;height:34px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:17px;flex-shrink:0}
+.pipe-icon-box.trig{background:rgba(163,230,53,.1);border:1px solid rgba(163,230,53,.25)}
+.pipe-icon-box.proc{background:rgba(56,189,248,.1);border:1px solid rgba(56,189,248,.25)}
+.pipe-icon-box.actn{background:rgba(167,139,250,.1);border:1px solid rgba(167,139,250,.25)}
+.pipe-info{flex:1}
+.pipe-info-title{font-size:12px;font-weight:700;color:var(--text)}
+.pipe-info-sub{font-size:10px;color:var(--dim);margin-top:1px}
+.pipe-badge{font-size:9px;font-weight:700;padding:2px 8px;border-radius:10px;flex-shrink:0}
+.pipe-badge.trig{color:var(--green);background:rgba(163,230,53,.12)}
+.pipe-badge.proc{color:var(--blue);background:rgba(56,189,248,.12)}
+.pipe-badge.actn{color:var(--purple);background:rgba(167,139,250,.12)}
+.pipe-connector{height:16px;display:flex;justify-content:center;align-items:center;position:relative}
+.pipe-connector::before{content:'';position:absolute;top:0;left:50%;width:1px;height:100%;background:linear-gradient(var(--green2),rgba(163,230,53,.15))}
+.pipe-conn-dot{width:7px;height:7px;border-radius:50%;background:var(--green);z-index:1;animation:dotBlink 1.8s ease-in-out infinite}
+.pipe-counter-strip{display:flex;gap:6px;margin-top:10px}
+.pipe-counter{flex:1;background:rgba(255,255,255,.02);border:1px solid var(--border);border-radius:var(--r-sm);padding:7px 5px;text-align:center}
+.pipe-counter-num{font-size:15px;font-weight:800;color:var(--green);display:block}
+.pipe-counter-lbl{font-size:8px;color:var(--dim);margin-top:2px}
+
+/* ── CARD 4: AI Chat ── */
+.ai-chat-wrap{width:100%;max-width:290px;position:relative;z-index:1}
+.ai-chat-topbar{background:rgba(255,255,255,.03);border:1px solid var(--border);border-radius:var(--r-sm) var(--r-sm) 0 0;padding:9px 14px;display:flex;align-items:center;gap:8px}
+.ai-chat-av{width:24px;height:24px;border-radius:50%;background:rgba(163,230,53,.12);border:1px solid rgba(163,230,53,.3);display:flex;align-items:center;justify-content:center;font-size:12px;flex-shrink:0}
+.ai-chat-name{font-size:12px;font-weight:700;color:var(--text)}
+.ai-chat-online{font-size:10px;color:var(--green);display:flex;align-items:center;gap:4px;margin-left:auto}
+.ai-chat-online-dot{width:6px;height:6px;border-radius:50%;background:var(--green);animation:dotBlink 1.5s ease-in-out infinite}
+.ai-chat-body{background:rgba(6,7,12,.75);border:1px solid var(--border);border-top:none;border-radius:0 0 var(--r-sm) var(--r-sm);padding:12px;display:flex;flex-direction:column;gap:8px}
+.ai-bubble{max-width:90%;padding:8px 11px;font-size:11px;line-height:1.5}
+.ai-bubble.user{background:rgba(163,230,53,.08);border:1px solid rgba(163,230,53,.18);color:var(--text);align-self:flex-end;border-radius:11px 11px 3px 11px}
+.ai-bubble.bot{background:rgba(255,255,255,.04);border:1px solid var(--border);color:var(--muted);align-self:flex-start;border-radius:11px 11px 11px 3px}
+.ai-insight-list{margin-top:6px;display:flex;flex-direction:column;gap:4px}
+.ai-insight-item{display:flex;align-items:center;gap:5px;font-size:10px;color:var(--text);padding:3px 6px;background:rgba(163,230,53,.05);border:1px solid rgba(163,230,53,.1);border-radius:5px}
+.ai-insight-item::before{content:'↑';color:var(--green);font-weight:700;font-size:11px}
+.ai-typing-row{display:flex;align-items:center;gap:7px}
+.ai-typing-dots{display:flex;gap:3px}
+.ai-typing-dot{width:5px;height:5px;border-radius:50%;background:var(--dim);animation:typingBounce .9s ease-in-out infinite}
+.ai-typing-dot:nth-child(2){animation-delay:.2s}
+.ai-typing-dot:nth-child(3){animation-delay:.4s}
+.ai-typing-label{font-size:10px;color:var(--dim)}
+@keyframes typingBounce{0%,100%{transform:translateY(0);opacity:.4}50%{transform:translateY(-5px);opacity:1}}
+
+/* ══════════════════════════════════════════════════════════
+   S6 INTEGRACIONES
+══════════════════════════════════════════════════════════ */
+.integ{padding:80px 0;background:var(--bg2);border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+.integ-hd{text-align:center;margin-bottom:40px}
+.integ-logos{display:flex;align-items:center;justify-content:center;gap:28px;flex-wrap:wrap}
+.integ-logo-wrap{display:flex;flex-direction:column;align-items:center;gap:8px}
+.integ-logo-box{width:68px;height:68px;border-radius:var(--r);background:var(--card);border:1px solid var(--border);display:flex;align-items:center;justify-content:center;transition:.25s}
+.integ-logo-box:hover{border-color:rgba(163,230,53,.3);transform:translateY(-3px)}
+.integ-logo-box img{width:34px;height:34px;object-fit:contain}
+.integ-label{font-size:11px;color:var(--dim);font-weight:500}
+.integ-pills{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:24px}
+.ipill{background:var(--card);border:1px solid var(--border);border-radius:100px;padding:7px 16px;font-size:13px;color:var(--muted);transition:.2s}
+.ipill:hover{border-color:rgba(163,230,53,.25);color:var(--text)}
+
+/* ══════════════════════════════════════════════════════════
+   S7 STEPS — GRAFICOS CSS
+══════════════════════════════════════════════════════════ */
+.steps{padding:120px 0;position:relative;overflow:hidden}
+.steps-glow{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:800px;height:400px;background:radial-gradient(ellipse,rgba(163,230,53,.04),transparent 70%);pointer-events:none}
+.steps-hd{text-align:center;margin-bottom:64px;position:relative;z-index:1}
+.steps-hd .h2{margin-bottom:12px}
+.steps-list{display:flex;flex-direction:column;gap:80px;position:relative;z-index:1}
+.step-row{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+.step-row.rev{direction:rtl}
+.step-row.rev > *{direction:ltr}
+.step-txt{display:flex;flex-direction:column;gap:16px}
+.step-num{font-size:13px;font-weight:700;color:var(--green);letter-spacing:1px;text-transform:uppercase}
+.step-visual-wrap{position:relative}
+
+/* Step 01 — Analisis: dashboard con datos */
+.step-analysis{background:var(--card2);border:1px solid var(--border);border-radius:var(--r);padding:24px;display:flex;flex-direction:column;gap:16px}
+.step-analysis-header{display:flex;align-items:center;justify-content:space-between}
+.step-analysis-title{font-size:13px;font-weight:700;color:var(--text)}
+.step-analysis-badge{font-size:10px;font-weight:700;color:var(--green);background:rgba(163,230,53,.1);border:1px solid rgba(163,230,53,.2);border-radius:100px;padding:3px 10px}
+.analysis-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.analysis-box{background:rgba(255,255,255,.03);border:1px solid var(--border);border-radius:var(--r-sm);padding:12px;text-align:center}
+.analysis-box-num{font-size:20px;font-weight:800;color:var(--green);display:block}
+.analysis-box-lbl{font-size:10px;color:var(--dim);margin-top:3px}
+.analysis-items{display:flex;flex-direction:column;gap:8px}
+.analysis-item{display:flex;align-items:center;gap:8px;font-size:12px;color:var(--muted)}
+.analysis-item-dot{width:6px;height:6px;border-radius:50%;background:var(--green);flex-shrink:0}
+.analysis-progress{display:flex;flex-direction:column;gap:8px}
+.ap-row{display:flex;align-items:center;gap:8px}
+.ap-label{font-size:10px;color:var(--dim);width:80px;flex-shrink:0}
+.ap-track{flex:1;height:5px;background:rgba(255,255,255,.05);border-radius:3px;overflow:hidden}
+.ap-fill{height:100%;border-radius:3px;background:linear-gradient(90deg,var(--green),var(--blue));transition:width 1.4s ease;width:0}
+.ap-val{font-size:10px;color:var(--green);font-weight:700;width:26px}
+
+/* Step 02 — Desarrollo: editor de codigo */
+.step-editor{font-family:'Fira Code',monospace;font-size:12px;line-height:1.6}
+.step-editor-body{padding:20px;display:flex;flex-direction:column;gap:2px}
+.code-line{display:flex;gap:12px}
+.ln{color:var(--dim);user-select:none;min-width:16px}
+.kw{color:#c792ea}
+.fn{color:#82aaff}
+.str{color:#c3e88d}
+.num{color:#f78c6c}
+.cm{color:var(--dim)}
+.op{color:var(--muted)}
+.cursor-blink{display:inline-block;width:2px;height:14px;background:var(--green);animation:cursorBlink 1.1s step-end infinite;vertical-align:middle;margin-left:1px}
+
+/* Step 03 — Implementacion: checklist de deploy */
+.step-deploy{background:var(--card2);border:1px solid var(--border);border-radius:var(--r);overflow:hidden}
+.deploy-header{padding:14px 20px;background:rgba(255,255,255,.02);border-bottom:1px solid var(--border);display:flex;align-items:center;justify-content:space-between}
+.deploy-title{font-size:13px;font-weight:700}
+.deploy-status{font-size:11px;font-weight:700;color:var(--green);display:flex;align-items:center;gap:6px}
+.deploy-status-dot{width:7px;height:7px;border-radius:50%;background:var(--green);animation:dotBlink 1.5s ease-in-out infinite}
+.deploy-list{padding:16px 20px;display:flex;flex-direction:column;gap:12px}
+.deploy-item{display:flex;align-items:center;gap:10px;font-size:13px}
+.deploy-check{width:22px;height:22px;border-radius:50%;border:2px solid var(--green);background:rgba(163,230,53,.1);display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:11px;color:var(--green)}
+.deploy-item.pending .deploy-check{background:transparent;border-color:var(--dim);color:transparent}
+.deploy-item.active .deploy-check{animation:deployPulse 1s ease-in-out infinite}
+.deploy-bar{margin-top:16px;padding:0 20px 20px}
+.deploy-bar-label{font-size:11px;color:var(--dim);margin-bottom:6px;display:flex;justify-content:space-between}
+.deploy-bar-track{height:6px;background:rgba(255,255,255,.06);border-radius:3px;overflow:hidden}
+.deploy-bar-fill{height:100%;border-radius:3px;background:linear-gradient(90deg,var(--green),var(--blue));width:78%;transition:width 1.4s ease}
+
+/* ══════════════════════════════════════════════════════════
+   S8 AI CARDS
+══════════════════════════════════════════════════════════ */
+.ai-cards{padding:0 0 120px}
+.ai-cards-hd{text-align:center;margin-bottom:56px}
+.ai-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-bottom:40px}
+.acard{border-radius:var(--r);overflow:hidden;border:1px solid var(--border);position:relative;transition:.28s;background:var(--card)}
+.acard::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at top right,rgba(163,230,53,.04),transparent 60%);transition:.3s}
+.acard:hover{border-color:rgba(163,230,53,.25);transform:translateY(-4px);box-shadow:0 16px 48px rgba(0,0,0,.4)}
+.acard:hover::before{opacity:2}
+.acard-inner{position:relative;z-index:1;padding:28px}
+.acard-icon{width:48px;height:48px;margin-bottom:18px;border-radius:var(--r-sm);background:rgba(163,230,53,.08);border:1px solid rgba(163,230,53,.15);display:flex;align-items:center;justify-content:center}
+.acard-icon img{width:24px;height:24px;object-fit:contain}
+.acard h3{font-size:16px;font-weight:700;margin-bottom:8px;letter-spacing:-.15px}
+.acard p{font-size:13px;color:var(--muted);line-height:1.66}
+.ai-cards-cta{text-align:center}
+
+/* ══════════════════════════════════════════════════════════
+   S9 CTA MID — CODIGO CSS
+══════════════════════════════════════════════════════════ */
+.ctamid{padding:100px 0;background:var(--bg2);border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+.ctamid-in{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+.ctamid-text .tag-pill{margin-bottom:20px}
+.ctamid-text .h2{margin-bottom:16px}
+/* Editor de codigo grande */
+.code-editor{font-family:'Fira Code',monospace;font-size:12.5px;line-height:1.7}
+.code-editor-body{padding:24px;display:flex;flex-direction:column;gap:2px;max-height:320px;overflow:hidden}
+
+/* ══════════════════════════════════════════════════════════
+   S11 IA
+══════════════════════════════════════════════════════════ */
+.ia{padding:120px 0}
+.ia-in{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:center}
+.ia-text .tag-pill{margin-bottom:20px}
+.ia-text .h2{margin-bottom:18px}
+.ia-text .sub{margin-bottom:32px}
+.ia-bens{display:flex;flex-direction:column;gap:14px}
+.ia-ben{display:flex;align-items:center;gap:14px;font-size:15px;font-weight:500}
+.ia-ben img{width:22px;height:22px;flex-shrink:0}
+.ia-vis{background:var(--card);border:1px solid var(--border);border-radius:var(--r);padding:28px;position:relative;overflow:hidden}
+.ia-vis::after{content:'';position:absolute;top:-80px;right:-80px;width:280px;height:280px;background:radial-gradient(circle,rgba(56,189,248,.06),transparent);border-radius:50%;pointer-events:none}
+.ia-stat{background:rgba(255,255,255,.03);border:1px solid var(--border);border-radius:var(--r-sm);padding:18px 20px;margin-bottom:12px;transition:.2s}
+.ia-stat:last-child{margin-bottom:0}
+.ia-stat:hover{border-color:rgba(163,230,53,.2)}
+.ia-stat-row{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px}
+.ia-stat-label{font-size:13px;color:var(--muted)}
+.ia-stat-val{font-size:20px;font-weight:800;color:var(--green)}
+.ia-bar{height:4px;background:rgba(255,255,255,.06);border-radius:2px;overflow:hidden}
+.ia-fill{height:100%;border-radius:2px;background:linear-gradient(90deg,var(--green),var(--blue));width:0;transition:width 1.2s ease}
+
+/* ══════════════════════════════════════════════════════════
+   FAQ
+══════════════════════════════════════════════════════════ */
+.faq{padding:120px 0}
+.faq-hd{text-align:center;margin-bottom:56px}
+.faq-list{max-width:740px;margin:0 auto;display:flex;flex-direction:column;gap:10px}
+.faq-item{background:var(--card);border:1px solid var(--border);border-radius:var(--r);overflow:hidden;transition:border-color .25s}
+.faq-item.open{border-color:rgba(163,230,53,.25)}
+.faq-q{padding:22px 24px;display:flex;align-items:center;justify-content:space-between;cursor:pointer;font-size:15px;font-weight:600;gap:16px;user-select:none}
+.faq-q:hover{color:var(--green)}
+.faq-arr{width:30px;height:30px;flex-shrink:0;border-radius:50%;background:rgba(255,255,255,.05);display:flex;align-items:center;justify-content:center;transition:transform .3s,background .2s}
+.faq-arr img{width:14px;height:14px;filter:invert(1);opacity:.5;transition:opacity .2s}
+.faq-item.open .faq-arr{transform:rotate(180deg);background:rgba(163,230,53,.1)}
+.faq-item.open .faq-arr img{opacity:1;filter:invert(74%) sepia(43%) saturate(500%) hue-rotate(47deg)}
+.faq-body{max-height:0;overflow:hidden;transition:max-height .35s ease}
+.faq-item.open .faq-body{max-height:160px}
+.faq-body p{padding:0 24px 22px;font-size:14px;color:var(--muted);line-height:1.75}
+
+/* ══════════════════════════════════════════════════════════
+   CTA FINAL
+══════════════════════════════════════════════════════════ */
+.ctafin{position:relative;padding:140px 32px;text-align:center;overflow:hidden}
+.ctafin-bg{position:absolute;inset:0;background-image:url('https://cdn.prod.website-files.com/68f4ee72649c170da7026b71/6919eb133f8bb94a2b390345_CTA%20Bg.avif');background-size:cover;background-position:center}
+.ctafin-overlay{position:absolute;inset:0;background:linear-gradient(to bottom,rgba(8,9,14,.45),rgba(8,9,14,.8))}
+.ctafin-in{position:relative;z-index:2;max-width:800px;margin:0 auto}
+.ctafin-in .tag-pill{margin-bottom:24px}
+.ctafin-in .h2{font-size:clamp(30px,5vw,60px);margin-bottom:18px;letter-spacing:-1.5px}
+.ctafin-in .sub{font-size:18px;margin-bottom:40px;max-width:520px;margin-left:auto;margin-right:auto}
+.ctafin-btns{display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
+
+/* ══════════════════════════════════════════════════════════
+   FOOTER
+══════════════════════════════════════════════════════════ */
+footer{background:var(--bg2);border-top:1px solid var(--border);padding:72px 0 36px}
+.foot-top{display:grid;grid-template-columns:2.2fr 1fr 1fr;gap:56px;margin-bottom:56px}
+.foot-logo{font-size:19px;font-weight:800;letter-spacing:-.2px;margin-bottom:16px}
+.foot-logo span{color:var(--green)}
+.foot-brand p{font-size:14px;color:var(--muted);line-height:1.8;max-width:300px}
+.foot-socials{display:flex;gap:10px;margin-top:22px}
+.foot-social{width:38px;height:38px;border-radius:var(--r-sm);background:var(--card);border:1px solid var(--border);display:flex;align-items:center;justify-content:center;transition:.2s}
+.foot-social:hover{border-color:rgba(163,230,53,.3);transform:translateY(-2px)}
+.foot-social img{width:18px;height:18px;object-fit:contain}
+.foot-col h4{font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.8px;color:var(--dim);margin-bottom:16px}
+.foot-col a{display:block;font-size:14px;color:var(--muted);margin-bottom:10px;transition:.2s}
+.foot-col a:hover{color:var(--text)}
+.foot-bottom{border-top:1px solid var(--border);padding-top:26px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px}
+.foot-bottom p{font-size:13px;color:var(--dim)}
+
+/* ══════════════════════════════════════════════════════════
+   KEYFRAMES
+══════════════════════════════════════════════════════════ */
+@keyframes glowPulse{0%,100%{opacity:.7;transform:translate(-50%,-50%) scale(1)}50%{opacity:1;transform:translate(-50%,-50%) scale(1.08)}}
+@keyframes dashFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+@keyframes badgeFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
+@keyframes dotBlink{0%,100%{opacity:1}50%{opacity:.3}}
+@keyframes nodeGlow{0%,100%{box-shadow:0 0 0 rgba(163,230,53,0)}50%{box-shadow:0 0 12px rgba(163,230,53,.2)}}
+@keyframes litPulse{0%,100%{opacity:1}50%{opacity:.5}}
+@keyframes barAnim{0%{width:20%}50%{width:90%}100%{width:20%}}
+@keyframes cursorBlink{0%,100%{opacity:1}50%{opacity:0}}
+@keyframes deployPulse{0%,100%{box-shadow:0 0 0 rgba(163,230,53,0)}50%{box-shadow:0 0 10px rgba(163,230,53,.3)}}
+@keyframes carScroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+/* ══════════════════════════════════════════════════════════
+   RESPONSIVE
+══════════════════════════════════════════════════════════ */
+/* ══════════════════════════════════════════════════════════
+   TABLET — ≤ 960 px
+══════════════════════════════════════════════════════════ */
+@media(max-width:960px){
+  /* Grids de 2 columnas → 1 columna */
+  .hero-in{grid-template-columns:1fr;padding:64px 32px;text-align:center}
+  .hero-text{display:flex;flex-direction:column;align-items:center}
+  .hero-p{max-width:100%}
+  .hero-visual{max-width:500px;margin:0 auto}
+  .planet-wrap{max-width:460px}
+  .power-in,.ctamid-in,.ia-in{grid-template-columns:1fr;gap:44px;text-align:center}
+  .power-text{text-align:center}
+  .step-row,.step-row.rev{grid-template-columns:1fr;direction:ltr;gap:32px}
+  .step-visual-wrap{max-width:480px;margin:0 auto}
+  .ai-grid{grid-template-columns:1fr 1fr}
+  .foot-top{grid-template-columns:1fr;gap:32px}
+  /* Padding de secciones */
+  .power{padding:88px 0}
+  .feat4{padding:0 0 88px}
+  .steps{padding:88px 0}
+  .ai-cards{padding:0 0 88px}
+  .ia{padding:88px 0}
+  .faq{padding:88px 0}
+  .ctamid{padding:80px 0}
+  /* Arquitectura */
+  .arch-row{flex-wrap:wrap;justify-content:center}
+  /* App card: reduce gap */
+  .app-phone-wrap{gap:12px}
+}
+
+/* ══════════════════════════════════════════════════════════
+   MÓVIL — ≤ 640 px
+══════════════════════════════════════════════════════════ */
+@media(max-width:640px){
+  /* Navbar → hamburger */
+  .nav-links,.nav-right{display:none}
+  .hbg{display:flex}
+  /* Layout base */
+  .wrap{padding:0 18px}
+  /* Hero */
+  .hero-in{padding:48px 18px 56px}
+  .hero-h1{font-size:clamp(28px,8vw,38px);letter-spacing:-.5px}
   .hero-visual{display:none} /* planeta demasiado pequeño en móvil */
   /* Grids → 1 columna */
   .feat4-grid{grid-template-columns:1fr}
